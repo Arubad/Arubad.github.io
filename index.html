@@ -91,7 +91,13 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 .hob{display:flex;flex-direction:column;gap:16px}
 .vid{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;border:1px solid var(--line);border-radius:8px;background-color:var(--panel);background-image:radial-gradient(rgba(232,236,241,.10) 1px,transparent 1.4px);background-size:22px 22px;text-decoration:none;overflow:hidden;transition:border-color .3s ease;cursor:pointer;padding:0;width:100%;font:inherit;color:inherit}
 .ra .vid:hover{border-color:var(--a)}
-.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
+.vid .vthumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82;transition:opacity .3s ease,transform .5s cubic-bezier(.2,.8,.2,1)}
+.vid.has-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,12,16,.85) 0%,rgba(10,12,16,.15) 45%,rgba(10,12,16,.25) 100%);pointer-events:none}
+.vid:hover .vthumb{opacity:1;transform:scale(1.03)}
+.vid .play,.vid .vurl{position:relative;z-index:2}
+.vid .vurl{position:absolute}
+.vid .play{box-shadow:0 6px 24px rgba(0,0,0,.45)}
 .play{width:68px;height:68px;border-radius:50%;background:var(--a);display:flex;align-items:center;justify-content:center;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
 .vid:hover .play{transform:scale(1.08)}
 .play svg{width:22px;height:22px;margin-left:4px;fill:#0A0C10}
@@ -823,10 +829,18 @@ Build your own version — pick one neon, one dark, one mono font. The rest is j
   /* ---------- Video tiles: click to embed ---------- */
   function ytSrc(id, start) { return 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0' + (start ? '&start=' + start : ''); }
   document.querySelectorAll('.vid[data-yt]').forEach(function (b) {
+    var id = b.getAttribute('data-yt');
+    var img = el('img', { 'class': 'vthumb', alt: '', 'aria-hidden': 'true', loading: 'lazy', decoding: 'async', src: 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg' });
+    img.addEventListener('error', function () {
+      if (!img.dataset.fallback) { img.dataset.fallback = '1'; img.src = 'https://img.youtube.com/vi/' + id + '/0.jpg'; }
+      else { img.remove(); b.classList.remove('has-thumb'); }
+    });
+    b.insertBefore(img, b.firstChild);
+    b.classList.add('has-thumb');
     b.addEventListener('click', function () {
       if (b.querySelector('iframe')) return;
       var f = el('iframe', { src: ytSrc(b.getAttribute('data-yt'), b.getAttribute('data-start')), title: b.getAttribute('aria-label') || 'YouTube video', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen: '' });
-      b.innerHTML = ''; b.appendChild(f); b.style.cursor = 'default';
+      b.innerHTML = ''; b.classList.remove('has-thumb'); b.appendChild(f); b.style.cursor = 'default';
     });
   });
 
