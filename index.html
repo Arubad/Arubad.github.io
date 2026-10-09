@@ -1,0 +1,1087 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arush Badhe — Portfolio</title>
+<meta name="description" content="Arush Badhe — AI/ML engineer building intelligent, scalable systems. Experience, education, projects, skills, logs and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#0A0C10;--panel:#10141B;--line:rgba(232,236,241,.10);--text:#E8ECF1;--muted:#A3ADBB;--a:#6EE7C5;--b:#F5C26B;--u:1s;color-scheme:dark}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0A0C10}
+a{color:#E8ECF1}a:hover{color:#6EE7C5}
+.ra{font-family:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif;color:var(--text);background:var(--bg);min-height:100vh;overflow-x:clip}
+.ra a:hover{color:var(--a)}
+.mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+.wrap{max-width:1200px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px);box-sizing:border-box;width:100%}
+.eyebrow{margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ix{color:var(--a);margin-right:6px;font-size:11px;vertical-align:super}
+.nl{text-decoration:none;font-size:14px;color:var(--text)}
+.display{margin:0;font-weight:800;font-size:clamp(56px,9vw,128px);line-height:.92;letter-spacing:-.035em}
+.h2{margin:0;font-weight:600;font-size:clamp(34px,4.6vw,60px);line-height:1;letter-spacing:-.025em}
+.lede{margin:0;font-size:clamp(19px,1.8vw,23px);line-height:1.45;color:var(--muted);max-width:34ch;text-wrap:pretty}
+.sec{display:flex;flex-direction:column;gap:44px;padding-top:136px;scroll-margin-top:0}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px}
+.sec-head>div{display:flex;flex-direction:column;gap:16px}
+.note{margin:0;font-size:14px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:600;transition:transform .25s ease,border-color .25s ease}
+.btn-solid{background:var(--a);color:#0A0C10}
+.ra .btn-solid:hover{color:#0A0C10;transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);color:var(--text);font-weight:500}
+.ra .btn-ghost:hover{border-color:var(--a)}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--a);box-shadow:0 0 12px var(--a);animation:blink calc(var(--u) * 2.4) ease-in-out infinite}
+@keyframes blink{50%{opacity:.35}}
+.hero{position:relative}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(232,236,241,.13) 1px,transparent 1.4px);background-size:28px 28px;-webkit-mask-image:radial-gradient(ellipse at 70% 45%,#000 0%,transparent 70%);mask-image:radial-gradient(ellipse at 70% 45%,#000 0%,transparent 70%);pointer-events:none}
+.nn{position:relative;width:100%;max-width:460px;aspect-ratio:46/32;margin-inline:auto}
+.ew{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.ew line{vector-effect:non-scaling-stroke;stroke-linecap:round}
+.ew .syn{stroke-width:2.4px;stroke-dasharray:12 100;stroke-dashoffset:12;animation:fire calc(var(--u) * 4) linear infinite;animation-delay:calc(var(--l) * var(--u) + var(--u) * .08)}
+@keyframes fire{0%{stroke-dashoffset:12}22%,100%{stroke-dashoffset:-100}}
+.neu{position:absolute;transform:translate(-50%,-50%);border-radius:50%;border:1.5px solid var(--a);background:var(--bg);box-sizing:border-box;padding:2px}
+.neu span{display:block;width:100%;height:100%;border-radius:50%;background:var(--a);opacity:calc(var(--o) * .3);animation:act calc(var(--u) * 4) ease-out infinite;animation-delay:calc(var(--l) * var(--u))}
+@keyframes act{0%{opacity:calc(var(--o) * .3);box-shadow:none}6%{opacity:var(--o);box-shadow:0 0 18px var(--a)}35%,100%{opacity:calc(var(--o) * .3);box-shadow:none}}
+.nn-labels{position:relative;width:100%;max-width:460px;height:20px;margin:0 auto;font-size:13px;color:var(--muted)}
+.nn-labels span{position:absolute;top:0;transform:translateX(-50%)}
+.mats{display:flex;justify-content:center;align-items:flex-end;gap:32px;flex-wrap:wrap;padding-top:8px}
+.wmat{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12px;color:var(--muted)}
+.wm{display:grid;gap:2px}
+.wm span{width:9px;height:9px;border-radius:1px;opacity:var(--o);animation:mflash calc(var(--u) * 4) ease-out infinite;animation-delay:calc(var(--l) * var(--u) + var(--u) * .1)}
+@keyframes mflash{0%{opacity:var(--o)}8%{opacity:1}30%,100%{opacity:var(--o)}}
+.caption{margin:0;font-size:12px;color:var(--muted);text-align:center;line-height:1.6}
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:18px 0}
+.track{display:inline-flex;animation:slide calc(var(--u) * 46) linear infinite}
+.track span{padding-right:56px;font-size:15px;color:var(--muted)}
+.track span b{color:var(--a);font-weight:500;margin-right:56px}
+@keyframes slide{to{transform:translateX(-50%)}}
+.stack{position:relative;list-style:none;margin:0;padding:0 0 0 40px;display:flex;flex-direction:column}
+.stack::before{content:"";position:absolute;left:7px;top:36px;bottom:36px;width:1px;background:var(--line)}
+.spark{position:absolute;left:4px;width:7px;height:36px;border-radius:4px;background:linear-gradient(to top,transparent,var(--a));animation:rise calc(var(--u) * 3.4) cubic-bezier(.5,0,.5,1) infinite}
+@keyframes rise{0%{top:calc(100% - 72px);opacity:0}15%{opacity:1}85%{opacity:1}100%{top:36px;opacity:0}}
+.layer{position:relative;display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr) minmax(0,220px);gap:28px;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--line)}
+.spark+.layer{border-top:1px solid var(--line)}
+.layer::before{content:"";position:absolute;left:-38px;top:38px;width:9px;height:9px;border-radius:50%;border:1.5px solid var(--a);background:var(--bg)}
+.layer h3{margin:0;font-size:24px;font-weight:600;letter-spacing:-.015em}
+.layer p{margin:8px 0 0;font-size:16px;line-height:1.5;color:var(--muted)}
+.lix{font-size:13px;color:var(--a);line-height:1.6}
+.tags{font-size:12px;color:var(--muted);line-height:1.7}
+.card{display:flex;flex-direction:column;gap:16px;padding:26px;background:var(--panel);border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--text);transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s ease}
+.ra .card:hover{transform:translateY(-6px);border-color:var(--a);color:var(--text)}
+.card h3{margin:0;font-size:23px;font-weight:600;letter-spacing:-.015em}
+.card p{margin:0;font-size:15px;line-height:1.5;color:var(--muted)}
+.idx{font-size:12px;color:var(--a)}
+.heat{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;width:120px}
+.heat span{aspect-ratio:1/1;border-radius:2px;background:var(--a);opacity:var(--o);animation:flick calc(var(--u) * 5) ease-in-out infinite;animation-delay:calc(var(--d) * var(--u) * -1)}
+.card:hover .heat span{background:var(--b)}
+@keyframes flick{50%{opacity:calc(var(--o) * .3)}}
+.edu{display:flex;flex-direction:column;gap:12px;padding:28px;border:1px solid var(--line);border-radius:8px}
+.edu h3{margin:0;font-size:24px;font-weight:600;letter-spacing:-.015em}
+.edu p{margin:0;font-size:16px;line-height:1.5;color:var(--muted)}
+.wgroup{display:flex;flex-direction:column;gap:14px;padding-top:18px;border-top:1px solid var(--line)}
+.wgroup ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:18px}
+.prof{gap:10px;padding:22px}
+.prof h3{font-size:19px}
+.prof p{font-size:14px}
+.prof .go{margin-top:auto;font-size:12px;color:var(--a)}
+.sub{display:flex;flex-direction:column;gap:20px;padding-top:28px}
+.hob{display:flex;flex-direction:column;gap:16px}
+.vid{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;border:1px solid var(--line);border-radius:8px;background-color:var(--panel);background-image:radial-gradient(rgba(232,236,241,.10) 1px,transparent 1.4px);background-size:22px 22px;text-decoration:none;overflow:hidden;transition:border-color .3s ease;cursor:pointer;padding:0;width:100%;font:inherit;color:inherit}
+.ra .vid:hover{border-color:var(--a)}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.play{width:68px;height:68px;border-radius:50%;background:var(--a);display:flex;align-items:center;justify-content:center;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.vid:hover .play{transform:scale(1.08)}
+.play svg{width:22px;height:22px;margin-left:4px;fill:#0A0C10}
+.vurl{position:absolute;left:16px;bottom:14px;font-size:12px;color:var(--muted)}
+.hob h3{margin:0;font-size:23px;font-weight:600;letter-spacing:-.015em}
+.hob p{margin:0;font-size:16px;line-height:1.55;color:var(--muted);max-width:52ch}
+.ach{gap:14px}
+.ach h3{font-size:20px;line-height:1.2}
+.ach .thumb{aspect-ratio:16/10;border-radius:6px;border:1px solid var(--line);background:var(--panel);overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:44px}
+.ach .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.ach .vid{aspect-ratio:16/10}
+.mail{font-size:clamp(22px,3vw,34px);text-decoration:none;border-bottom:2px solid var(--a);padding-bottom:4px}
+.uplink{display:flex;gap:28px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.uplink b{display:block;color:var(--text);font-weight:500;margin-top:4px}
+.uplink .on{color:var(--a)}
+/* blog graph */
+.bg{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;color:#E8ECF1;display:flex;flex-direction:column;gap:18px;width:100%;box-sizing:border-box}
+.bg-tags{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bg-tags .lbl{font-size:12px;color:var(--muted);margin-right:6px;text-transform:uppercase;letter-spacing:.06em}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid rgba(232,236,241,.20);background:transparent;color:#E8ECF1;font-family:inherit;font-size:13px;cursor:pointer;transition:background .2s ease}
+.chip span{opacity:.6}
+.chip[aria-pressed="true"]{background:var(--a);border-color:var(--a);color:#0A0C10}
+.bg-row{display:flex;flex-wrap:wrap;gap:20px;align-items:stretch}
+.bg-area{position:relative;flex:999 1 560px;min-width:0;height:560px;border:1px solid rgba(232,236,241,.10);border-radius:8px;background:rgba(16,20,27,.55);overflow:hidden}
+.bg-area svg{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.bg-area line{vector-effect:non-scaling-stroke;transition:stroke .25s ease}
+.bg-pulse{position:absolute;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:var(--a);pointer-events:none}
+.bg-lab{position:absolute;transform:translateX(-50%);width:132px;text-align:center;font-size:11px;line-height:1.3;pointer-events:none;transition:opacity .25s ease}
+.bg-node{position:absolute;transform:translate(-50%,-50%);padding:0;border:none;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:opacity .25s ease}
+.bg-node span{display:block;border-radius:50%;background:var(--a);box-sizing:border-box;transition:box-shadow .2s ease}
+.bg-side{flex:1 1 300px;min-width:0;box-sizing:border-box;padding:26px;background:#10141B;border:1px solid rgba(232,236,241,.10);border-radius:8px;display:flex;flex-direction:column;gap:16px}
+.bg-side .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.bg-side h3{margin:0;font-family:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif;font-weight:600;font-size:26px;line-height:1.15;letter-spacing:-.01em}
+.bg-side p{margin:0;font-size:14px;line-height:1.6;color:var(--muted)}
+.bg-side .pt{display:flex;flex-wrap:wrap;gap:6px}
+.bg-side .pt span{font-size:12px;padding:4px 10px;border:1px solid rgba(232,236,241,.22);border-radius:999px}
+.bg-side .foot{display:flex;flex-direction:column;gap:4px;margin-top:auto;padding-top:14px;border-top:1px solid rgba(232,236,241,.10)}
+.bg-side .foot .k{padding-bottom:4px}
+.rowbtn{display:flex;justify-content:space-between;gap:12px;min-height:36px;align-items:center;padding:0;border:none;background:transparent;color:#E8ECF1;font-family:inherit;font-size:13px;text-align:left;cursor:pointer}
+.rowbtn:hover{color:var(--a)}
+.rowbtn span+span{color:var(--muted);white-space:nowrap}
+.xbtn{width:44px;height:44px;margin:-10px -12px -10px 0;display:flex;align-items:center;justify-content:center;border:none;background:transparent;color:#E8ECF1;cursor:pointer}
+.readlink{font-size:14px;color:var(--a);text-underline-offset:4px;background:none;border:0;padding:0;font-family:inherit;cursor:pointer;text-decoration:underline;align-self:flex-start}
+/* reader */
+.reader{position:fixed;inset:0;z-index:50;background:rgba(5,6,9,.78);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:5vh 16px}
+.reader.open{display:flex}
+.reader article{position:relative;width:100%;max-width:760px;box-sizing:border-box;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:clamp(22px,4vw,48px);font-family:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif;color:var(--text)}
+.reader .rhead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
+.md{font-size:17px;line-height:1.65;color:#C9D1DC;overflow-wrap:anywhere}
+.md h1{font-size:clamp(30px,4vw,42px);line-height:1.05;letter-spacing:-.02em;color:var(--text);margin:.2em 0 .6em}
+.md h2{font-size:24px;letter-spacing:-.015em;color:var(--text);margin:1.6em 0 .5em}
+.md strong{color:var(--text)}
+.md a{color:var(--a)}
+.md hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.md ul,.md ol{padding-left:1.3em}.md li{margin:.3em 0}
+.md blockquote{margin:1.2em 0;padding:4px 0 4px 18px;border-left:2px solid var(--a);color:var(--text)}
+.md code{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:.86em;background:rgba(110,231,197,.08);color:var(--a);padding:.1em .35em;border-radius:4px}
+.md pre{background:#0A0C10;border:1px solid var(--line);border-radius:6px;padding:16px 18px;overflow-x:auto}
+.md pre code{background:none;color:#D6DEE8;padding:0;font-size:13.5px;line-height:1.6}
+.md table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+.md th,.md td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left}
+.md th{color:var(--muted);font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.md .yt{position:relative;aspect-ratio:16/9;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:1.2em 0}
+.md .yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+@media (max-width:760px){.layer{grid-template-columns:minmax(0,1fr);gap:8px}.bg-area{height:440px}.sec{padding-top:104px}}
+@media (prefers-reduced-motion: reduce){.ra *{animation-play-state:paused !important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="ra" id="ra">
+
+<header class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:28px;padding-bottom:28px">
+<a href="#top" class="mono" style="text-decoration:none;font-size:15px;letter-spacing:.02em">T[<span style="color:var(--a)">arush·badhe</span>]</a>
+<nav class="mono" aria-label="Primary" style="display:flex;gap:24px;flex-wrap:wrap">
+<a href="#experience" class="nl"><span class="ix">0</span>experience</a>
+<a href="#education" class="nl"><span class="ix">1</span>education</a>
+<a href="#projects" class="nl"><span class="ix">2</span>projects</a>
+<a href="#skills" class="nl"><span class="ix">3</span>skills</a>
+<a href="#blog" class="nl"><span class="ix">4</span>logs</a>
+<a href="#hobbies" class="nl"><span class="ix">5</span>hobbies</a>
+<a href="#contact" class="nl"><span class="ix">6</span>uplink</a>
+</nav>
+</header>
+
+<main>
+<section id="top" class="wrap hero" style="display:flex;flex-wrap:wrap;align-items:center;gap:48px;min-height:640px;padding-top:24px;padding-bottom:72px">
+<div style="flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:30px;position:relative">
+<p class="mono eyebrow">T ∈ ℝ<sup>4×4×4</sup> · J.A.R.V.I.S. // online</p>
+<h1 class="display">Arush<br>Badhe</h1>
+<p class="lede"><span style="color:var(--text)">AI/ML Engineer</span> building intelligent, scalable systems. Transforming data into real-world impact.</p>
+<span class="mono status"><i aria-hidden="true"></i>actively seeking internship opportunities</span>
+<div style="display:flex;gap:14px;flex-wrap:wrap">
+<a href="#projects" class="btn btn-solid">See the work</a>
+<a href="#blog" class="btn btn-ghost mono">read my logs →</a>
+</div>
+</div>
+<div style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:20px;position:relative">
+<div class="nn" id="nn" aria-hidden="true"></div>
+<div class="nn-labels mono" aria-hidden="true">
+<span style="left:8%">x</span><span style="left:36%">h₁</span><span style="left:64%">h₂</span><span style="left:92%">ŷ</span>
+</div>
+<div class="mats mono" id="mats" aria-hidden="true"></div>
+<p class="mono caption">fig. 0 — a forward pass. Activations flow left to right; each W is the weight matrix drawn above it.</p>
+</div>
+</section>
+
+<div class="marquee mono" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section id="experience" class="wrap sec">
+<div class="sec-head">
+<div><p class="mono eyebrow">dim 0 — experience</p><h2 class="h2">The forward pass.</h2></div>
+<p class="mono note">CAREER.PROTOCOL · most recent layer on top</p>
+</div>
+<div class="stack">
+<span class="spark" aria-hidden="true"></span>
+<div class="layer">
+<span class="mono lix">L4 · 2024 — now</span>
+<div><h3>Research Assistant · VIT Pune</h3><p>Research — Lab / Dept.</p></div>
+<span class="mono tags">NLP · LLMs · Paper Writing</span>
+</div>
+<div class="layer">
+<span class="mono lix">L3 · Jan 2024 — now</span>
+<div><h3>Contributor · Open Source</h3><p>Project / Repository Name</p></div>
+<span class="mono tags">React · Node.js · GitHub</span>
+</div>
+<div class="layer">
+<span class="mono lix">L2 · Jun — Aug 2024</span>
+<div><h3>Machine Learning Intern</h3><p>Internship — Company Name, City</p></div>
+<span class="mono tags">Python · TensorFlow · Data Pipeline</span>
+</div>
+<div class="layer">
+<span class="mono lix">L1 · Sep — Dec 2023</span>
+<div><h3>Full-Stack Developer · Freelance</h3><p>Self — Remote</p></div>
+<span class="mono tags">Next.js · Tailwind · PostgreSQL</span>
+</div>
+</div>
+</section>
+
+<section id="education" class="wrap sec">
+<div class="sec-head">
+<div><p class="mono eyebrow">dim 1 — education</p><h2 class="h2">Pre-training.</h2></div>
+<p class="mono note">ACQUISITION.PATH // TRACED</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:20px">
+<div class="edu">
+<span class="mono lix">EDU.04 · 2024 — present</span>
+<h3>Diploma, Data Science</h3>
+<p>IIT Madras (IITM)</p>
+<p class="mono" style="font-size:13px">focus: Research · Advanced AI · Systems Design</p>
+</div>
+<div class="edu">
+<span class="mono lix">EDU.03 · 2023 — 2027</span>
+<h3>B.Tech, Information Technology</h3>
+<p>VIT Pune</p>
+<p class="mono" style="font-size:13px">focus: DSA · OS · DBMS · Networks · ML · Systems</p>
+</div>
+<div class="edu">
+<span class="mono lix">EDU.02 · 2021 — 2023</span>
+<h3>Higher Secondary</h3>
+<p>M-Prakash Institute</p>
+<p class="mono" style="font-size:13px">focus: Physics · Chemistry · Mathematics · CS</p>
+</div>
+<div class="edu">
+<span class="mono lix">EDU.01 · 2011 — 2020</span>
+<h3>Class X, CBSE Board</h3>
+<p>Millenium National School</p>
+<p class="mono" style="font-size:13px">focus: Mathematics · Science · Computing</p>
+</div>
+</div>
+</section>
+
+<section id="projects" class="wrap sec">
+<div class="sec-head">
+<div><p class="mono eyebrow">dim 2 — projects</p><h2 class="h2">Slices of what I've built.</h2></div>
+<p class="mono note">for i in range(4): show(T[i, :, :])</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:20px" id="projgrid">
+<a href="#projects" class="card"><span class="mono idx">T[0, :, :]</span><div class="heat" data-seed="1" aria-hidden="true"></div><h3>PROJECT.ALPHA</h3><p>Full-stack web platform with real-time sync, JWT auth, and responsive dashboard.</p><span class="mono tags">React · Node · MongoDB</span></a>
+<a href="#projects" class="card"><span class="mono idx">T[1, :, :]</span><div class="heat" data-seed="2" aria-hidden="true"></div><h3>NEURAL.PIPE</h3><p>End-to-end ML pipeline for image classification with REST deployment on cloud.</p><span class="mono tags">Python · TensorFlow · FastAPI</span></a>
+<a href="#projects" class="card"><span class="mono idx">T[2, :, :]</span><div class="heat" data-seed="3" aria-hidden="true"></div><h3>DSA.TRACKER</h3><p>LeetCode + Codeforces progress tracker with A2Z sheet integration and analytics.</p><span class="mono tags">React · Firebase · Tailwind</span></a>
+<a href="#projects" class="card"><span class="mono idx">T[3, :, :]</span><div class="heat" data-seed="4" aria-hidden="true"></div><h3>CIPHER.CLI</h3><p>High-performance cryptography CLI tool with Redis caching and container deploy.</p><span class="mono tags">Go · Redis · Docker</span></a>
+</div>
+</section>
+
+<section id="skills" class="wrap sec">
+<div class="sec-head">
+<div><p class="mono eyebrow">dim 3 — skills</p><h2 class="h2">Learned weights.</h2></div>
+<p class="mono note">TECH.STACK // VERIFIED</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(190px,100%),1fr));gap:32px">
+<div class="wgroup"><span class="mono lix">W[0] · languages</span><ul><li>Python</li><li>C++</li><li>Java</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li></ul></div>
+<div class="wgroup"><span class="mono lix">W[1] · ML &amp; data</span><ul><li>TensorFlow</li><li>PyTorch</li><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li><li>OpenCV</li></ul></div>
+<div class="wgroup"><span class="mono lix">W[2] · frontend</span><ul><li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>HTML5 / CSS3</li></ul></div>
+<div class="wgroup"><span class="mono lix">W[3] · backend</span><ul><li>Node.js</li><li>FastAPI</li><li>Express</li><li>REST APIs</li><li>GraphQL</li></ul></div>
+<div class="wgroup"><span class="mono lix">W[4] · tools</span><ul><li>Git</li><li>Docker</li><li>Linux</li><li>VS Code</li><li>Firebase</li><li>Postman</li></ul></div>
+</div>
+<div class="sub">
+<p class="mono eyebrow">external.profiles — where the weights get tested</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:16px">
+<a class="card prof" href="https://github.com/Arubad" target="_blank" rel="noopener noreferrer"><span class="mono idx">⟨/⟩ GITHUB</span><h3>github.com/Arubad</h3><p>Open source projects, personal tools &amp; contributions</p><span class="mono go">view profile →</span></a>
+<a class="card prof" href="https://leetcode.com/u/YXdB8UMU0q/" target="_blank" rel="noopener noreferrer"><span class="mono idx">LEETCODE</span><h3>LeetCode</h3><p>Consistent across Easy, Medium &amp; Hard categories</p><span class="mono go">view profile →</span></a>
+<a class="card prof" href="https://codeforces.com/profile/arushbadhe" target="_blank" rel="noopener noreferrer"><span class="mono idx">CODEFORCES</span><h3>Codeforces</h3><p>Competitive programming, rated contests</p><span class="mono go">view profile →</span></a>
+<a class="card prof" href="https://www.kaggle.com/arushbadhe" target="_blank" rel="noopener noreferrer"><span class="mono idx">KAGGLE</span><h3>Kaggle</h3><p>Data science notebooks, competitions &amp; datasets</p><span class="mono go">view profile →</span></a>
+<a class="card prof" href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target="_blank" rel="noopener noreferrer"><span class="mono idx">▸▸ STRIVER A2Z</span><h3>Striver A2Z</h3><p>Structured DSA: Arrays → Graphs → DP → Advanced</p><span class="mono go">view sheet →</span></a>
+<a class="card prof" href="https://neetcode.io/practice" target="_blank" rel="noopener noreferrer"><span class="mono idx">NEETCODE 150</span><h3>NeetCode 150</h3><p>Curated FAANG interview prep problem set</p><span class="mono go">view sheet →</span></a>
+</div>
+</div>
+</section>
+
+<section id="blog" class="wrap sec">
+<div class="sec-head">
+<div><p class="mono eyebrow">dim 4 — logs</p><h2 class="h2">Latent space.</h2></div>
+<p class="mono note" style="max-width:46ch">J.A.R.V.I.S. // LOGS — posts wired together by shared tags</p>
+</div>
+<div class="bg" id="bg"></div>
+</section>
+
+<section id="hobbies" class="wrap sec">
+<div class="sec-head">
+<div><p class="mono eyebrow">dim 5 — hobbies &amp; achievements</p><h2 class="h2">Off-distribution.</h2></div>
+<p class="mono note">PERSONAL.DIRECTIVES // LOADED</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:28px">
+<div class="hob">
+<button type="button" class="vid" data-yt="naA0TolwnbQ" aria-label="Play video: Swimming"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"></path></svg></span><span class="mono vurl">youtube.com/watch?v=naA0TolwnbQ</span></button>
+<h3>Swimming</h3>
+<p class="mono" style="font-size:13px">HOBBY</p>
+</div>
+<div class="hob">
+<button type="button" class="vid" data-yt="J-cZYIokw_c" aria-label="Play video: Badminton"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"></path></svg></span><span class="mono vurl">youtube.com/watch?v=J-cZYIokw_c</span></button>
+<h3>Badminton</h3>
+<p class="mono" style="font-size:13px">HOBBY</p>
+</div>
+</div>
+<div class="sub">
+<p class="mono eyebrow">achievements — checkpoints saved along the way</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:20px">
+<div class="edu ach">
+<button type="button" class="vid" data-yt="QtUKaFm8_gY" data-start="1" aria-label="Play video: School Olympics Champion Boy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"></path></svg></span></button>
+<span class="mono lix">ACHIEVEMENT</span>
+<h3>School Olympics Champion Boy</h3>
+<p>Prestigious award given to the outstanding performer in School Olympics.</p>
+</div>
+<div class="edu ach">
+<div class="thumb"><img src="https://trontheme.vercel.app/cert.png" alt="IITM BS Data Science Foundation Certificate" loading="lazy" onerror="this.remove()"></div>
+<span class="mono lix">ACHIEVEMENT</span>
+<h3>IITM BS Data Science Foundation</h3>
+<p>Completed the Foundation Program in Mathematics, Statistics, Computational Thinking, and Python.</p>
+</div>
+<div class="edu ach">
+<div class="thumb" aria-hidden="true">🧠</div>
+<span class="mono lix">ACHIEVEMENT</span>
+<h3>AI/ML &amp; Data Science Lead</h3>
+<p>Led the Gedit Coding Club with mentorship, workshops, and project-based learning in AI, ML, and data science.</p>
+</div>
+<div class="edu ach">
+<div class="thumb" aria-hidden="true">📚</div>
+<span class="mono lix">ACHIEVEMENT</span>
+<h3>M-Prakash Institute</h3>
+<p>Completed highly selective and rigorous IIT-JEE focused competitive coaching.</p>
+</div>
+<div class="edu ach">
+<div class="thumb"><img src="https://trontheme.vercel.app/portfoliopic.png" alt="Social welfare achievement certificate" loading="lazy" onerror="this.remove()"></div>
+<span class="mono lix">ACHIEVEMENT</span>
+<h3>Social Welfare Achievement</h3>
+<p>Recognized for contribution to social welfare activities.</p>
+</div>
+<div class="edu ach">
+<div class="thumb"><img src="https://trontheme.vercel.app/img.jpg" alt="Google Solutions Challenge 2025 participation" loading="lazy" onerror="this.remove()"></div>
+<span class="mono lix">ACHIEVEMENT</span>
+<h3>Google Solutions Challenge 2025</h3>
+<p>Participated with a social-impact focused project.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="wrap sec" style="gap:32px;padding-top:168px;padding-bottom:120px">
+<p class="mono eyebrow">dim 6 — uplink · open_channel // secure_transmission</p>
+<h2 class="display" style="font-size:clamp(48px,8vw,112px)">Let's contract<br>an index.</h2>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:32px">
+<a href="https://github.com/Arubad" target="_blank" rel="noopener noreferrer" class="mail">github.com/Arubad</a>
+<div class="mono" style="display:flex;gap:24px;flex-wrap:wrap;font-size:14px">
+<a href="https://leetcode.com/u/YXdB8UMU0q/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+<a href="https://codeforces.com/profile/arushbadhe" target="_blank" rel="noopener noreferrer">Codeforces</a>
+<a href="https://www.kaggle.com/arushbadhe" target="_blank" rel="noopener noreferrer">Kaggle</a>
+</div>
+</div>
+<div class="mono uplink">
+<span>RESPONSE<b>≤ 24 cycles</b></span>
+<span>STATUS<b class="on">NODE_ACTIVE</b></span>
+<span>LOOKING FOR<b>Internships · AI/ML</b></span>
+</div>
+</section>
+</main>
+
+<footer class="wrap mono" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:28px;padding-bottom:40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)">
+<span>© <span id="yr">2026</span> Arush Badhe</span>
+<span>rendered at rank 3</span>
+</footer>
+</div>
+
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-labelledby="rtitle">
+<article>
+<div class="rhead mono"><span class="eyebrow" id="rdate">SYSTEM.LOG // READING_MODE</span><button type="button" class="xbtn" id="rclose" aria-label="Close post"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:1.8"><path d="M3 3 L13 13 M13 3 L3 13"></path></svg></button></div>
+<div class="md" id="rbody"></div>
+</article>
+</div>
+
+<!-- ===== Log content (markdown) ===== -->
+<script type="text/markdown" id="md-scroll-synced-video">
+# Building Scroll-Synced Video Experiences
+
+Scroll-driven animations are one of the most satisfying interactions on the modern web. In this post, I'll break down how I built a **scroll-synced video background** using only native browser APIs — no library overhead, just raw `requestAnimationFrame` and `HTMLVideoElement`.
+
+## The Core Idea
+
+The trick is deceptively simple:
+
+> Map `window.scrollY` to `video.currentTime` on every animation frame.
+
+```javascript
+const syncVideo = () => {
+  const scrollPct = window.scrollY / maxScroll;
+  video.currentTime = scrollPct * video.duration;
+};
+```
+
+The hard part is making it **feel premium** — no jank, no stutter, no dropped frames.
+
+---
+
+## Why `requestAnimationFrame`?
+
+Naively, you might attach to the `scroll` event directly. But scroll events can fire at 60+ Hz and pile up faster than the browser can paint. Instead, we **batch** updates using `rAF`:
+
+```javascript
+let rafId = null;
+
+window.addEventListener('scroll', () => {
+  if (!rafId) {
+    rafId = requestAnimationFrame(() => {
+      syncVideo();
+      rafId = null;
+    });
+  }
+}, { passive: true });
+```
+
+This ensures exactly **one sync per frame** — matching the browser's repaint cycle.
+
+---
+
+## Pausing the Video
+
+A crucial detail: the video must be **paused**. If it plays freely while you also set `currentTime`, you get a race condition. Always:
+
+```javascript
+if (!video.paused) video.pause();
+video.currentTime = targetTime;
+```
+
+## Preloading for Zero-Stutter Scrubbing
+
+For smooth scrubbing, the **entire video must be buffered**. Set:
+
+```html
+<video preload="auto" ...>
+```
+
+And wait for `canplaythrough` before enabling scroll sync. Attempting to scrub an unbuffered video results in visible seek latency.
+
+---
+
+## Snap Navigation
+
+To complement the scroll-sync, I added a **snap engine** — wheel events are intercepted and the page is snapped to predefined scroll positions using an ease-out-quart curve:
+
+```javascript
+function easeOutQuart(t) { return 1 - Math.pow(1 - t, 4); }
+```
+
+Fast start, smooth landing. Feels premium.
+
+---
+
+## YouTube Embed Demo
+
+Here's a great reference on scroll-driven animation from Google Chrome Developers:
+
+::youtube[oDcb3fvtETs]
+
+---
+
+## Performance Notes
+
+- Use `will-change: transform` on animated elements to promote them to GPU layers
+- Avoid setting `video.currentTime` if the delta is < 16ms (one frame)
+- Keep video codec as **H.264 + AAC** for broadest hardware decode support
+- Test on mobile — seek latency is noticeably higher on slower CPUs
+
+---
+
+The result is a buttery-smooth parallax video experience with zero library overhead. The entire engine is under 100 lines of vanilla JS.
+</script>
+
+<script type="text/markdown" id="md-mastering-dynamic-programming">
+# Mastering Dynamic Programming
+
+Dynamic programming intimidates most people. After solving 200+ DP problems, I've distilled it into a **4-step framework** that works on 90% of problems.
+
+## The 4-Step Framework
+
+1. **Identify the state** — What information uniquely defines a subproblem?
+2. **Define the transition** — How does `dp[i]` depend on smaller subproblems?
+3. **Set the base case** — What are the simplest, directly-solvable states?
+4. **Determine the traversal order** — Which direction ensures dependencies are resolved first?
+
+---
+
+## Example: 0/1 Knapsack
+
+Classic problem: given items with weights and values, maximize value within capacity `W`.
+
+**State:** `dp[i][w]` = max value using first `i` items with capacity `w`
+
+**Transition:**
+```
+dp[i][w] = max(
+  dp[i-1][w],                          // skip item i
+  dp[i-1][w - weight[i]] + value[i]    // take item i (if w >= weight[i])
+)
+```
+
+**Base case:** `dp[0][w] = 0` for all `w`
+
+```python
+def knapsack(weights, values, W):
+    n = len(weights)
+    dp = [[0] * (W + 1) for _ in range(n + 1)]
+
+    for i in range(1, n + 1):
+        for w in range(W + 1):
+            dp[i][w] = dp[i-1][w]
+            if w >= weights[i-1]:
+                dp[i][w] = max(dp[i][w], dp[i-1][w - weights[i-1]] + values[i-1])
+
+    return dp[n][W]
+```
+
+Time: `O(n·W)` | Space: `O(n·W)` → optimizable to `O(W)` with 1D DP.
+
+---
+
+## The Space Optimization Pattern
+
+Whenever `dp[i]` only depends on `dp[i-1]`, you can collapse to a **1D array** — but traverse in the right direction:
+
+- **0/1 Knapsack** (each item usable once) → traverse `w` **right to left**
+- **Unbounded Knapsack** (items reusable) → traverse `w` **left to right**
+
+```python
+def knapsack_1d(weights, values, W):
+    dp = [0] * (W + 1)
+    for i in range(len(weights)):
+        for w in range(W, weights[i] - 1, -1):  # right to left
+            dp[w] = max(dp[w], dp[w - weights[i]] + values[i])
+    return dp[W]
+```
+
+---
+
+## Interval DP
+
+For problems on **substrings or subarrays** (e.g., Burst Balloons, Matrix Chain Multiplication):
+
+- State: `dp[l][r]` — optimal answer for the subproblem on range `[l, r]`
+- Iterate by **length** first, then by left endpoint:
+
+```python
+for length in range(2, n + 1):
+    for l in range(n - length + 1):
+        r = l + length - 1
+        for k in range(l, r):
+            dp[l][r] = max(dp[l][r], dp[l][k] + dp[k+1][r] + cost(l, k, r))
+```
+
+---
+
+## Tree DP
+
+Many tree problems involve DP over nodes, where each node's answer depends on its children.
+
+**Example:** Maximum path sum in a binary tree.
+
+```python
+def maxPathSum(root):
+    res = [float('-inf')]
+
+    def dfs(node):
+        if not node: return 0
+        left  = max(0, dfs(node.left))
+        right = max(0, dfs(node.right))
+        res[0] = max(res[0], left + right + node.val)
+        return max(left, right) + node.val
+
+    dfs(root)
+    return res[0]
+```
+
+The key insight: the function **returns** the max gain going *up*, while updating a global best for paths going *through* the node.
+
+---
+
+## Pattern Recognition Cheat Sheet
+
+| Pattern | Signal in problem | Classic examples |
+|---|---|---|
+| Linear DP | Subsequence, substring, prefix | LCS, LIS, Edit Distance |
+| Grid DP | 2D grid, paths | Unique Paths, Minimum Path Sum |
+| Interval DP | Merge operations, palindromes | Burst Balloons, Palindrome Partitioning |
+| Tree DP | Binary tree, dependency | Max Path Sum, House Robber III |
+| Bitmask DP | Small sets (n ≤ 20) | TSP, Hamiltonian Path |
+| Digit DP | Count numbers with property | Count digits with constraint |
+
+---
+
+DP mastery comes from pattern recognition, not memorization. Solve 10 problems from each category above and the patterns become instinctive.
+</script>
+
+<script type="text/markdown" id="md-cyber-industrial-css">
+# The Cyber-Industrial Design System
+
+There's a particular aesthetic that's been quietly dominating developer portfolios and SaaS dashboards: **dark, grid-heavy, neon-accented UI**. I call it Cyber-Industrial.
+
+This is my documented design system for building it.
+
+---
+
+## Color Palette
+
+The palette is minimal — maximum contrast, zero noise:
+
+| Token | Value | Usage |
+|---|---|---|
+| `--tron-black` | `#000000` | Page background |
+| `--tron-dark` | `#020810` | Panel backgrounds |
+| `--tron-cyan` | `#00c8ff` | Primary accent, glows |
+| `--tron-red` | `#ff2200` | Danger, alerts |
+| `--tron-white` | `#e8f4f8` | Body text |
+| `--tron-muted` | `#4a7a8a` | Labels, metadata |
+
+> **Rule:** Never use pure white (`#ffffff`) for text on dark backgrounds. The slight blue tint in `#e8f4f8` reduces eye strain and feels more "digital."
+
+---
+
+## The Grid Overlay
+
+The signature grid effect is pure CSS — two crossing gradients:
+
+```css
+.tron-grid-overlay {
+  background-image:
+    linear-gradient(rgba(0, 200, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 200, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+```
+
+**Key:** The opacity is `0.04` — barely visible. A stronger grid becomes noise. The goal is depth, not pattern.
+
+---
+
+## Glassmorphism Panels
+
+Every content panel uses this combo:
+
+```css
+.tron-panel {
+  background: rgba(0, 12, 28, 0.88);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  border-radius: 4px;
+}
+```
+
+Three things at work:
+1. **Dark translucent fill** — lets the video/background bleed through subtly
+2. **Backdrop blur** — creates the frosted glass depth effect
+3. **1px cyan border** — the defining edge of the Tron aesthetic
+
+---
+
+## Neon Text Glow
+
+Don't use `text-shadow` on large text — it's expensive and causes visual blur. Reserve it for **small display text**:
+
+```css
+.tron-accent {
+  color: var(--tron-cyan);
+  text-shadow:
+    0 0 15px var(--tron-cyan),
+    0 0 40px rgba(0, 200, 255, 0.5);
+}
+```
+
+For headings, use **color alone** — clean and sharp.
+
+---
+
+## Animation Philosophy
+
+Two rules:
+
+1. **GPU-only transforms** — only animate `transform` and `opacity`. Never `width`, `height`, `top`, `left`.
+2. **Hardware promotion** — add `will-change: transform` to elements that animate frequently.
+
+```css
+.skill-bar-fill {
+  animation: fillBar 1.4s ease-out forwards;
+  will-change: transform; /* promotes to GPU layer */
+}
+```
+
+The **ease-out-quart** curve is the signature motion feel:
+
+```css
+transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+```
+
+Fast launch, smooth landing. Feels premium and intentional.
+
+---
+
+## Scanline Effect
+
+The subtle scanline overlay adds texture without noise:
+
+```css
+.tron-scanlines {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    transparent 3px,
+    rgba(0, 0, 0, 0.12) 3px,
+    rgba(0, 0, 0, 0.12) 4px
+  );
+  animation: scanline-drift 8s linear infinite;
+}
+```
+
+A drift animation moves the scanlines slowly — referencing CRT monitors without being gimmicky.
+
+---
+
+## Watch This for Inspiration
+
+::youtube[6NkN5K1f0_U]
+
+---
+
+## Summary
+
+The system works because it's **constrained**. One accent color. One font pair. One motion curve. Constraints create cohesion. Cohesion creates premium feel.
+
+Build your own version — pick one neon, one dark, one mono font. The rest is just craft.
+</script>
+
+<script>
+(function () {
+  'use strict';
+  var ACCENT = '#6EE7C5', NEG = '#F5C26B';
+  var reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  function el(tag, attrs, html) {
+    var e = document.createElement(tag);
+    if (attrs) for (var k in attrs) { if (k === 'style') e.style.cssText = attrs[k]; else e.setAttribute(k, attrs[k]); }
+    if (html != null) e.innerHTML = html;
+    return e;
+  }
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  function sv(tag, attrs) { var e = document.createElementNS(SVGNS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
+
+  /* ---------- Hero: neural network forward pass ---------- */
+  (function () {
+    var sizes = [4, 6, 6, 3], xs = [8, 36, 64, 92], sub = ['₁', '₂', '₃'];
+    var rnd = function (s) { var v = Math.sin(s * 12.9898) * 43758.5453; return v - Math.floor(v); };
+    var Y = function (n, i) { return 50 + (i - (n - 1) / 2) * 15; };
+    var nn = document.getElementById('nn'), mats = document.getElementById('mats');
+    var base = sv('svg', { 'class': 'ew', viewBox: '0 0 100 100', preserveAspectRatio: 'none' });
+    var fire = sv('svg', { 'class': 'ew', viewBox: '0 0 100 100', preserveAspectRatio: 'none' });
+    for (var l = 0; l < 3; l++) {
+      var wm = el('div', { 'class': 'wm', style: 'grid-template-columns:repeat(' + sizes[l] + ',9px)' });
+      for (var j = 0; j < sizes[l + 1]; j++) for (var k = 0; k < sizes[l]; k++) {
+        var w = rnd(100 + l * 50 + j * 7 + k) * 2 - 1, aw = Math.abs(w), c = w >= 0 ? ACCENT : NEG;
+        var x1 = xs[l], y1 = Y(sizes[l], k).toFixed(2), x2 = xs[l + 1], y2 = Y(sizes[l + 1], j).toFixed(2);
+        base.appendChild(sv('line', { x1: x1, y1: y1, x2: x2, y2: y2, style: 'stroke:' + c + ';stroke-opacity:' + (0.08 + 0.3 * aw).toFixed(2) + ';stroke-width:' + (0.8 + 1.6 * aw).toFixed(2) + 'px' }));
+        if (aw > 0.4) fire.appendChild(sv('line', { 'class': 'syn', pathLength: '100', x1: x1, y1: y1, x2: x2, y2: y2, style: 'stroke:' + c + ';stroke-opacity:' + (0.5 + 0.5 * aw).toFixed(2) + ';--l:' + l }));
+        wm.appendChild(el('span', { style: 'background:' + c + ';--o:' + (0.15 + 0.85 * aw).toFixed(2) + ';--l:' + l }));
+      }
+      var box = el('div', { 'class': 'wmat' });
+      box.appendChild(wm);
+      box.appendChild(el('span', null, 'W' + sub[l] + ' · ' + sizes[l + 1] + '×' + sizes[l]));
+      mats.appendChild(box);
+    }
+    nn.appendChild(base); nn.appendChild(fire);
+    for (var L = 0; L < 4; L++) for (var i = 0; i < sizes[L]; i++) {
+      var s = L === 0 ? 14 : (L === 3 ? 18 : 16);
+      var n = el('span', { 'class': 'neu', style: 'left:' + xs[L] + '%;top:' + Y(sizes[L], i).toFixed(2) + '%;width:' + s + 'px;height:' + s + 'px;--l:' + L + ';--o:' + (0.45 + 0.55 * rnd(L * 10 + i + 1)).toFixed(2) });
+      n.appendChild(el('span'));
+      nn.appendChild(n);
+    }
+    var t = ['softmax(QKᵀ/√d)·V', '∂ℒ/∂W', "einsum('bij,bjk→bik')", 'tr(AᵀB)', '‖x‖₂', 'X = UΣVᵀ', '∇·F', 'σ(Wx + b)', '𝔼[x]', 'A ⊗ B'];
+    var track = document.getElementById('track');
+    t.concat(t).forEach(function (s) { var sp = el('span'); sp.appendChild(el('b', null, '·')); sp.appendChild(document.createTextNode(s)); track.appendChild(sp); });
+  })();
+
+  /* ---------- Project heatmaps ---------- */
+  document.querySelectorAll('.heat').forEach(function (h) {
+    var seed = +h.getAttribute('data-seed');
+    for (var n = 0; n < 16; n++) {
+      var v = Math.abs(Math.sin((n + 1) * 12.9898 + seed * 78.233) * 43758.5453) % 1;
+      h.appendChild(el('span', { style: '--o:' + (0.15 + v * 0.85).toFixed(2) + ';--d:' + (v * 5).toFixed(2) }));
+    }
+  });
+
+  /* ---------- Video tiles: click to embed ---------- */
+  function ytSrc(id, start) { return 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0' + (start ? '&start=' + start : ''); }
+  document.querySelectorAll('.vid[data-yt]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (b.querySelector('iframe')) return;
+      var f = el('iframe', { src: ytSrc(b.getAttribute('data-yt'), b.getAttribute('data-start')), title: b.getAttribute('aria-label') || 'YouTube video', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen: '' });
+      b.innerHTML = ''; b.appendChild(f); b.style.cursor = 'default';
+    });
+  });
+
+  /* ---------- Reader ---------- */
+  var reader = document.getElementById('reader'), rbody = document.getElementById('rbody'), rdate = document.getElementById('rdate'), lastFocus = null;
+  function escapeHtml(s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function inline(s) {
+    var codes = [];
+    s = s.replace(/`([^`]+)`/g, function (_, c) { codes.push('<code>' + escapeHtml(c) + '</code>'); return '\u0000' + (codes.length - 1) + '\u0000'; });
+    s = escapeHtml(s)
+      .replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g, '<a href="$2">$1</a>')
+      .replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/(^|[^*])\*([^*\s][^*]*?)\*/g, '$1<em>$2</em>');
+    return s.replace(/\u0000(\d+)\u0000/g, function (_, i) { return codes[+i]; });
+  }
+  function renderMd(md) {
+    var L = md.replace(/\r/g, '').split('\n'), out = [], i = 0, para = [];
+    function flush() { if (para.length) { out.push('<p>' + inline(para.join(' ')) + '</p>'); para = []; } }
+    while (i < L.length) {
+      var ln = L[i], m;
+      if (/^```/.test(ln)) {
+        flush(); var buf = []; i++;
+        while (i < L.length && !/^```/.test(L[i])) buf.push(L[i++]);
+        i++; out.push('<pre><code>' + escapeHtml(buf.join('\n')) + '</code></pre>'); continue;
+      }
+      if ((m = ln.match(/^::youtube\[([A-Za-z0-9_-]+)\]/))) {
+        flush(); out.push('<div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/' + m[1] + '" title="YouTube video" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>'); i++; continue;
+      }
+      if ((m = ln.match(/^(#{1,4})\s+(.*)$/))) { flush(); out.push('<h' + m[1].length + '>' + inline(m[2]) + '</h' + m[1].length + '>'); i++; continue; }
+      if (/^---\s*$/.test(ln)) { flush(); out.push('<hr>'); i++; continue; }
+      if (/^>\s?/.test(ln)) {
+        flush(); var q = [];
+        while (i < L.length && /^>\s?/.test(L[i])) q.push(L[i++].replace(/^>\s?/, ''));
+        out.push('<blockquote>' + inline(q.join(' ')) + '</blockquote>'); continue;
+      }
+      if (/^\|/.test(ln)) {
+        flush(); var rows = [];
+        while (i < L.length && /^\|/.test(L[i])) rows.push(L[i++]);
+        var cells = function (r) { return r.replace(/^\||\|\s*$/g, '').split('|').map(function (c) { return c.trim(); }); };
+        var h = '<table><thead><tr>' + cells(rows[0]).map(function (c) { return '<th>' + inline(c) + '</th>'; }).join('') + '</tr></thead><tbody>';
+        rows.slice(2).forEach(function (r) { h += '<tr>' + cells(r).map(function (c) { return '<td>' + inline(c) + '</td>'; }).join('') + '</tr>'; });
+        out.push(h + '</tbody></table>'); continue;
+      }
+      if (/^(\s*[-*]|\s*\d+\.)\s+/.test(ln)) {
+        flush(); var ordered = /^\s*\d+\./.test(ln), items = [];
+        while (i < L.length && /^(\s*[-*]|\s*\d+\.)\s+/.test(L[i])) items.push(L[i++].replace(/^(\s*[-*]|\s*\d+\.)\s+/, ''));
+        var tg = ordered ? 'ol' : 'ul';
+        out.push('<' + tg + '>' + items.map(function (t) { return '<li>' + inline(t) + '</li>'; }).join('') + '</' + tg + '>'); continue;
+      }
+      if (/^\s*$/.test(ln)) { flush(); i++; continue; }
+      para.push(ln.trim()); i++;
+    }
+    flush();
+    return out.join('\n');
+  }
+  function openPost(p) {
+    lastFocus = document.activeElement;
+    var src = document.getElementById('md-' + p.id);
+    rdate.textContent = 'SYSTEM.LOG // ' + fmt(p.date) + ' · ' + p.tags.join(' · ');
+    rbody.innerHTML = renderMd(src ? src.textContent : '');
+    rbody.querySelectorAll('a').forEach(function (a) { a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+    reader.classList.add('open'); reader.scrollTop = 0;
+    document.body.style.overflow = 'hidden';
+    document.getElementById('rclose').focus();
+  }
+  function closePost() {
+    reader.classList.remove('open'); rbody.innerHTML = ''; document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+  document.getElementById('rclose').addEventListener('click', closePost);
+  reader.addEventListener('click', function (e) { if (e.target === reader) closePost(); });
+  window.addEventListener('keydown', function (e) { if (e.key === 'Escape' && reader.classList.contains('open')) closePost(); });
+
+  /* ---------- Blog graph ---------- */
+  var M = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function fmt(d) { var p = d.split('-'); return p[2] + ' ' + M[parseInt(p[1], 10) - 1] + ' ' + p[0]; }
+  var P = [
+    { id: 'scroll-synced-video', title: 'Building Scroll-Synced Video Experiences with Native Web APIs', short: 'Scroll-synced video', date: '2025-12-01', tags: ['javascript', 'animation', 'webapi', 'frontend'], excerpt: 'Mapping scrollY to video.currentTime every animation frame — rAF batching, paused scrubbing, full preloading and an ease-out-quart snap engine, in under 100 lines of vanilla JS.' },
+    { id: 'mastering-dynamic-programming', title: 'Mastering Dynamic Programming — A Systematic Grid Approach', short: 'Mastering DP', date: '2025-10-15', tags: ['dsa', 'algorithms', 'leetcode'], excerpt: 'A 4-step framework distilled from 200+ DP problems — state, transition, base case, traversal order — worked through knapsack, interval and tree DP, plus a pattern cheat sheet.' },
+    { id: 'cyber-industrial-css', title: 'The Cyber-Industrial Design System — Dark UI in the Grid', short: 'Cyber-industrial CSS', date: '2025-08-22', tags: ['css', 'design', 'tron', 'frontend'], excerpt: 'A documented system for dark, grid-heavy, neon-accented UI: palette tokens, a 0.04-opacity grid overlay, glass panels, restrained glow and GPU-only motion.' }
+  ];
+  var E = [];
+  for (var i = 0; i < P.length; i++) for (var j = i + 1; j < P.length; j++) {
+    var shared = P[i].tags.filter(function (t) { return P[j].tags.indexOf(t) >= 0; });
+    if (shared.length) E.push({ a: i, b: j, shared: shared });
+  }
+  var Lay = (function () {
+    var n = P.length, X = [], i, j, k;
+    for (i = 0; i < n; i++) X.push({ x: 500 + 280 * Math.cos(2 * Math.PI * i / n), y: 300 + 200 * Math.sin(2 * Math.PI * i / n), vx: 0, vy: 0 });
+    for (k = 0; k < 500; k++) {
+      for (i = 0; i < n; i++) for (j = i + 1; j < n; j++) {
+        var dx = X[j].x - X[i].x, dy = X[j].y - X[i].y, d2 = Math.max(dx * dx + dy * dy, 100), d = Math.sqrt(d2), f = 90000 / d2;
+        X[i].vx -= dx / d * f; X[i].vy -= dy / d * f; X[j].vx += dx / d * f; X[j].vy += dy / d * f;
+      }
+      for (var m = 0; m < E.length; m++) {
+        var a = X[E[m].a], b = X[E[m].b], ex = b.x - a.x, ey = b.y - a.y, ed = Math.max(Math.sqrt(ex * ex + ey * ey), 1), s = (ed - 190) * 0.015 * E[m].shared.length;
+        a.vx += ex / ed * s; a.vy += ey / ed * s; b.vx -= ex / ed * s; b.vy -= ey / ed * s;
+      }
+      for (i = 0; i < n; i++) {
+        X[i].vx += (500 - X[i].x) * 0.012; X[i].vy += (300 - X[i].y) * 0.02;
+        X[i].vx *= 0.82; X[i].vy *= 0.82;
+        X[i].x += Math.max(-20, Math.min(20, X[i].vx)); X[i].y += Math.max(-20, Math.min(20, X[i].vy));
+      }
+    }
+    var minx = 1e9, maxx = -1e9, miny = 1e9, maxy = -1e9;
+    X.forEach(function (p) { minx = Math.min(minx, p.x); maxx = Math.max(maxx, p.x); miny = Math.min(miny, p.y); maxy = Math.max(maxy, p.y); });
+    return X.map(function (p) { return { x: 14 + (p.x - minx) / Math.max(maxx - minx, 1) * 72, y: 16 + (p.y - miny) / Math.max(maxy - miny, 1) * 62 }; });
+  })();
+
+  var root = document.getElementById('bg');
+  var st = { t: 0, hover: null, sel: null, tag: null };
+  var counts = {};
+  P.forEach(function (p) { p.tags.forEach(function (g) { counts[g] = (counts[g] || 0) + 1; }); });
+  var tagNames = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a] || (a < b ? -1 : 1); });
+
+  var tagRow = el('div', { 'class': 'bg-tags' });
+  tagRow.appendChild(el('span', { 'class': 'lbl' }, 'Tags'));
+  var chips = tagNames.map(function (g) {
+    var c = el('button', { type: 'button', 'class': 'chip', 'aria-pressed': 'false' });
+    c.appendChild(document.createTextNode(g)); c.appendChild(el('span', null, String(counts[g])));
+    c.addEventListener('click', function () { st.tag = st.tag === g ? null : g; st.sel = null; st.hover = null; update(true); });
+    tagRow.appendChild(c); return c;
+  });
+  root.appendChild(tagRow);
+
+  var row = el('div', { 'class': 'bg-row' });
+  var area = el('div', { 'class': 'bg-area' });
+  area.addEventListener('mouseleave', function () { st.hover = null; update(true); });
+  var esvg = sv('svg', { viewBox: '0 0 100 100', preserveAspectRatio: 'none', 'aria-hidden': 'true' });
+  var lines = E.map(function () { var l = sv('line', {}); esvg.appendChild(l); return l; });
+  area.appendChild(esvg);
+  var pulses = E.map(function () { var p = el('span', { 'class': 'bg-pulse', 'aria-hidden': 'true' }); area.appendChild(p); return p; });
+  var deg = {};
+  E.forEach(function (e) { deg[e.a] = (deg[e.a] || 0) + 1; deg[e.b] = (deg[e.b] || 0) + 1; });
+  var nodes = P.map(function (p, i) {
+    var size = Math.round(16 + (deg[i] || 0) * 3);
+    var lab = el('span', { 'class': 'bg-lab', 'aria-hidden': 'true' }); lab.textContent = p.short;
+    var btn = el('button', { type: 'button', 'class': 'bg-node', 'aria-label': p.title });
+    var dot = el('span'); dot.style.width = dot.style.height = size + 'px';
+    btn.style.width = btn.style.height = Math.max(44, size + 12) + 'px';
+    btn.appendChild(dot);
+    btn.addEventListener('click', function () { st.sel = st.sel === i ? null : i; st.tag = null; update(true); });
+    btn.addEventListener('mouseenter', function () { st.hover = i; update(true); });
+    btn.addEventListener('focus', function () { st.hover = i; update(true); });
+    btn.addEventListener('blur', function () { st.hover = null; update(true); });
+    area.appendChild(lab); area.appendChild(btn);
+    return { lab: lab, btn: btn, dot: dot, size: size };
+  });
+  row.appendChild(area);
+  var side = el('aside', { 'class': 'bg-side', 'aria-live': 'polite' });
+  row.appendChild(side);
+  root.appendChild(row);
+
+  var sideKey = '';
+  function renderSide() {
+    var key = st.sel == null ? 'none' : 's' + st.sel;
+    if (key === sideKey) return; sideKey = key;
+    side.innerHTML = '';
+    if (st.sel == null) {
+      side.appendChild(el('span', { 'class': 'k' }, P.length + ' posts · ' + tagNames.length + ' tags · ' + E.length + ' links'));
+      side.appendChild(el('h3', null, 'What I’m thinking about.'));
+      side.appendChild(el('p', null, 'Each node is a log. Logs that share a tag are wired together — the more they share, the thicker the wire. It grows as I write.'));
+      side.appendChild(el('p', { style: 'font-size:13px' }, 'Hover to trace connections. Click to open.'));
+      var foot = el('div', { 'class': 'foot' });
+      foot.appendChild(el('span', { 'class': 'k' }, 'Latest'));
+      P.map(function (p, i) { return { p: p, i: i }; }).sort(function (a, b) { return a.p.date < b.p.date ? 1 : -1; }).slice(0, 3).forEach(function (o) {
+        var b = el('button', { type: 'button', 'class': 'rowbtn' });
+        b.appendChild(el('span', null, o.p.short)); b.appendChild(el('span', null, fmt(o.p.date)));
+        b.addEventListener('click', function () { st.sel = o.i; st.tag = null; update(true); });
+        foot.appendChild(b);
+      });
+      side.appendChild(foot);
+    } else {
+      var sp = P[st.sel], idx = st.sel;
+      var top = el('div', { style: 'display:flex;justify-content:space-between;align-items:center;gap:12px' });
+      top.appendChild(el('span', { 'class': 'k' }, fmt(sp.date)));
+      var x = el('button', { type: 'button', 'class': 'xbtn', 'aria-label': 'Close post' }, '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:1.8"><path d="M3 3 L13 13 M13 3 L3 13"></path></svg>');
+      x.addEventListener('click', function () { st.sel = null; st.hover = null; update(true); });
+      top.appendChild(x); side.appendChild(top);
+      side.appendChild(el('h3', null, escapeHtml(sp.title)));
+      var pt = el('div', { 'class': 'pt' });
+      sp.tags.forEach(function (t) { pt.appendChild(el('span', null, t)); });
+      side.appendChild(pt);
+      side.appendChild(el('p', null, escapeHtml(sp.excerpt)));
+      var rd = el('button', { type: 'button', 'class': 'readlink' }, 'Read log →');
+      rd.addEventListener('click', function () { openPost(sp); });
+      side.appendChild(rd);
+      var f2 = el('div', { 'class': 'foot' });
+      f2.appendChild(el('span', { 'class': 'k' }, 'Wired to'));
+      var any = false;
+      E.forEach(function (e) {
+        if (e.a === idx || e.b === idx) {
+          any = true;
+          var o = e.a === idx ? e.b : e.a;
+          var b = el('button', { type: 'button', 'class': 'rowbtn' });
+          b.appendChild(el('span', null, P[o].short)); b.appendChild(el('span', null, e.shared.join(' · ')));
+          b.addEventListener('click', function () { st.sel = o; st.hover = null; update(true); });
+          f2.appendChild(b);
+        }
+      });
+      if (!any) f2.appendChild(el('span', { style: 'font-size:13px;color:var(--muted)' }, 'No shared tags yet — a lone node.'));
+      side.appendChild(f2);
+    }
+  }
+
+  function update(force) {
+    var t = st.t, focus = st.hover != null ? st.hover : st.sel, tag = st.tag, anyF = focus != null || tag != null;
+    var nodeOn = {}, edgeOn = {};
+    E.forEach(function (e, k) {
+      if (focus != null && (e.a === focus || e.b === focus)) { edgeOn[k] = true; nodeOn[e.a] = true; nodeOn[e.b] = true; }
+      if (focus == null && tag && e.shared.indexOf(tag) >= 0) edgeOn[k] = true;
+    });
+    if (focus != null) nodeOn[focus] = true;
+    if (focus == null && tag) P.forEach(function (p, i) { if (p.tags.indexOf(tag) >= 0) nodeOn[i] = true; });
+    var pos = Lay.map(function (p, i) { return { x: p.x + 1.3 * Math.sin(t * 0.35 + i * 1.9), y: p.y + 1.9 * Math.cos(t * 0.28 + i * 2.7) }; });
+    nodes.forEach(function (n, i) {
+      var on = !!nodeOn[i], dim = anyF && !on, isF = focus === i || st.sel === i;
+      n.btn.style.left = n.lab.style.left = pos[i].x.toFixed(2) + '%';
+      n.btn.style.top = pos[i].y.toFixed(2) + '%';
+      n.lab.style.top = 'calc(' + pos[i].y.toFixed(2) + '% + ' + Math.round(n.size / 2 + 10) + 'px)';
+      if (force) {
+        n.btn.style.opacity = n.lab.style.opacity = dim ? 0.2 : 1;
+        n.lab.style.color = (on || isF) ? '#E8ECF1' : '#A3ADBB';
+        n.dot.style.boxShadow = isF ? '0 0 0 6px rgba(232,236,241,.10), 0 0 28px ' + ACCENT : (on ? '0 0 16px ' + ACCENT : 'none');
+      }
+    });
+    E.forEach(function (e, k) {
+      var a = pos[e.a], b = pos[e.b], on = !!edgeOn[k], w = e.shared.length, l = lines[k];
+      l.setAttribute('x1', a.x.toFixed(2)); l.setAttribute('y1', a.y.toFixed(2)); l.setAttribute('x2', b.x.toFixed(2)); l.setAttribute('y2', b.y.toFixed(2));
+      l.style.stroke = on ? ACCENT : (anyF ? 'rgba(232,236,241,.07)' : 'rgba(232,236,241,.26)');
+      l.style.strokeWidth = (1 + (w - 1) * 1.4 + (on ? 0.8 : 0)).toFixed(1) + 'px';
+      var p = pulses[k];
+      if (!reduce && (!anyF || on)) {
+        var f = (t * 0.22 + k * 0.37) % 1; if (k % 2) f = 1 - f;
+        p.style.display = 'block';
+        p.style.left = (a.x + (b.x - a.x) * f).toFixed(2) + '%'; p.style.top = (a.y + (b.y - a.y) * f).toFixed(2) + '%';
+        p.style.opacity = anyF ? 1 : 0.5;
+      } else p.style.display = 'none';
+    });
+    if (force) {
+      chips.forEach(function (c, i) { c.setAttribute('aria-pressed', st.tag === tagNames[i] ? 'true' : 'false'); });
+      renderSide();
+    }
+  }
+  update(true);
+  if (!reduce) {
+    var t0 = performance.now(), last = 0, visible = true;
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (en) { visible = en[0].isIntersecting; }).observe(area);
+    (function tick(now) {
+      if (visible && now - last > 33) { last = now; st.t = (now - t0) / 1000; update(false); }
+      requestAnimationFrame(tick);
+    })(t0);
+  }
+})();
+</script>
+</body>
+</html>
