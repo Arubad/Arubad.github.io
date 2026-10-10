@@ -87,6 +87,47 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 .prof h3{font-size:19px}
 .prof p{font-size:14px}
 .prof .go{margin-top:auto;font-size:12px;color:var(--a)}
+/* tracker cards */
+.trk-card{font:inherit;text-align:left;cursor:pointer;width:100%}
+.trk-mini{display:block;height:6px;border-radius:3px;background:rgba(232,236,241,.10);overflow:hidden}
+.trk-mini i{display:block;height:100%;width:0;border-radius:3px;background:var(--a);transition:width .8s cubic-bezier(.2,.8,.2,1)}
+.trk-mini-k{font-size:12px;color:var(--muted);margin-top:-6px}
+/* tracker dashboard */
+.trk{position:fixed;inset:0;z-index:60;background:rgba(5,6,9,.78);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:5vh 16px}
+.trk.open{display:flex}
+.trk-panel{position:relative;width:100%;max-width:880px;box-sizing:border-box;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:clamp(22px,4vw,40px);display:flex;flex-direction:column;gap:28px;color:var(--text);font-family:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif}
+.trk-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.trk-head h2{margin:8px 0 0;font-size:clamp(30px,4vw,44px);font-weight:600;letter-spacing:-.02em;line-height:1}
+.trk-head p{margin:10px 0 0;font-size:15px;line-height:1.5;color:var(--muted);max-width:56ch}
+.trk-hero{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 28px}
+.trk-big{font-size:clamp(56px,8vw,88px);font-weight:800;letter-spacing:-.04em;line-height:.9}
+.trk-big small{font-size:.4em;font-weight:600;color:var(--muted);margin-left:4px;letter-spacing:-.01em}
+.trk-bar{flex:1 1 260px;display:flex;flex-direction:column;gap:8px;padding-bottom:8px}
+.trk-bar .bar{height:10px}
+.bar{position:relative;height:8px;border-radius:4px;background:rgba(232,236,241,.10);overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;border-radius:4px;background:var(--a);transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.trk-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr));gap:12px}
+.tile{border:1px solid var(--line);border-radius:8px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.tile .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tile .v{font-size:26px;font-weight:600;letter-spacing:-.02em}
+.tile .s{font-size:12px;color:var(--muted)}
+.trk-sec{display:flex;flex-direction:column;gap:12px}
+.trk-sec>.k{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.trk-rows{display:flex;flex-direction:column}
+.trow{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr) 72px minmax(0,118px);gap:16px;align-items:center;padding:11px 0;border-top:1px solid var(--line);font-size:15px}
+.trow:last-child{border-bottom:1px solid var(--line)}
+.trow .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.trow .c{font-size:13px;color:var(--text);text-align:right;font-variant-numeric:tabular-nums}
+.st{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.st b{font-weight:500;width:14px;text-align:center}
+.st.done{color:var(--text)} .st.done b{color:var(--a)}
+.trk-ms{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:12px}
+.ms{border-left:2px solid var(--a);padding:4px 0 4px 14px;display:flex;flex-direction:column;gap:4px}
+.ms .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ms .v{font-size:16px;font-weight:600}
+.ms .s{font-size:12px;color:var(--muted)}
+.trk-foot{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:640px){.trow{grid-template-columns:minmax(0,1fr) 64px;row-gap:8px}.trow .bar{grid-column:1 / -1;grid-row:2}.trow .st{grid-column:1 / -1}}
 .sub{display:flex;flex-direction:column;gap:20px;padding-top:28px}
 .hob{display:flex;flex-direction:column;gap:16px}
 .vid{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;border:1px solid var(--line);border-radius:8px;background-color:var(--panel);background-image:radial-gradient(rgba(232,236,241,.10) 1px,transparent 1.4px);background-size:22px 22px;text-decoration:none;overflow:hidden;transition:border-color .3s ease;cursor:pointer;padding:0;width:100%;font:inherit;color:inherit}
@@ -301,8 +342,8 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 <a class="card prof" href="https://github.com/Arubad" target="_blank" rel="noopener noreferrer"><span class="mono idx">⟨/⟩ GITHUB</span><h3>github.com/Arubad</h3><p>Open source projects, personal tools &amp; contributions</p><span class="mono go">view profile →</span></a>
 <a class="card prof" href="https://leetcode.com/u/YXdB8UMU0q/" target="_blank" rel="noopener noreferrer"><span class="mono idx">LEETCODE</span><h3>LeetCode</h3><p>Consistent across Easy, Medium &amp; Hard categories</p><span class="mono go">view profile →</span></a>
 <a class="card prof" href="https://www.kaggle.com/arushbadhe" target="_blank" rel="noopener noreferrer"><span class="mono idx">KAGGLE</span><h3>Kaggle</h3><p>Data science notebooks, competitions &amp; datasets</p><span class="mono go">view profile →</span></a>
-<a class="card prof" href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target="_blank" rel="noopener noreferrer"><span class="mono idx">▸▸ STRIVER A2Z</span><h3>Striver A2Z</h3><p>Structured DSA: Arrays → Graphs → DP → Advanced</p><span class="mono go">view sheet →</span></a>
-<a class="card prof" href="https://neetcode.io/practice" target="_blank" rel="noopener noreferrer"><span class="mono idx">NEETCODE 150</span><h3>NeetCode 150</h3><p>Curated FAANG interview prep problem set</p><span class="mono go">view sheet →</span></a>
+<button type="button" class="card prof trk-card" data-tracker="striver" aria-haspopup="dialog"><span class="mono idx">▸▸ STRIVER A2Z</span><h3>Striver A2Z</h3><p>Structured DSA: Arrays → Graphs → DP → Advanced</p><span class="trk-mini" aria-hidden="true"><i></i></span><span class="mono trk-mini-k"></span><span class="mono go">open tracker →</span></button>
+<button type="button" class="card prof trk-card" data-tracker="neetcode" aria-haspopup="dialog"><span class="mono idx">NEETCODE 150</span><h3>NeetCode 150</h3><p>Curated FAANG interview prep problem set</p><span class="trk-mini" aria-hidden="true"><i></i></span><span class="mono trk-mini-k"></span><span class="mono go">open tracker →</span></button>
 </div>
 </div>
 </section>
@@ -400,6 +441,82 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 <div class="md" id="rbody"></div>
 </article>
 </div>
+
+<div class="trk" id="trk" role="dialog" aria-modal="true" aria-labelledby="trk-title">
+<div class="trk-panel" id="trk-panel"></div>
+</div>
+
+<!-- =====================================================================
+     PROGRESS TRACKERS — EDIT YOUR NUMBERS HERE
+     Update `solved` for each topic, then `updated`, `streakDays`,
+     `thisWeek` and the milestones. Totals, percentages and the
+     complete / in progress / not started labels are calculated
+     automatically. Commit the file and the live site updates.
+     ===================================================================== -->
+<script>
+window.TRACKERS = {
+  striver: {
+    name: 'Striver A2Z',
+    tag: 'STRIVER A2Z // DSA ROADMAP',
+    note: 'Structured DSA roadmap from foundations to interview-grade advanced patterns.',
+    updated: '2026-10-10',      // YYYY-MM-DD
+    streakDays: 48,
+    weeklyTarget: 35,
+    thisWeek: 22,
+    focus: 'Dynamic Programming', // what you're working on now
+    topics: [
+      { name: 'Arrays',              solved: 35,  total: 35 },
+      { name: 'Strings',             solved: 43,  total: 44 },
+      { name: 'Linked List',         solved: 31,  total: 31 },
+      { name: 'Binary Search',       solved: 32,  total: 32 },
+      { name: 'Trees',               solved: 38,  total: 43 },
+      { name: 'Graphs',              solved: 44,  total: 54 },
+      { name: 'Dynamic Programming', solved: 34,  total: 56 },
+      { name: 'Advanced',            solved: 149, total: 268 }
+    ],
+    milestones: [
+      { label: 'Next milestone', value: '450 solved',             eta: 'Est. 2 weeks' },
+      { label: 'Practice goal',  value: '2 mock interviews / week', eta: 'Active' },
+      { label: 'Revision',       value: 'A2Z round 2 in 30 days', eta: 'Queued' }
+    ]
+  },
+  neetcode: {
+    name: 'NeetCode 150',
+    tag: 'NEETCODE 150 // INTERVIEW PREP',
+    note: 'Curated interview prep across 18 patterns: arrays, two pointers, sliding window, trees, graphs, DP, backtracking and more.',
+    updated: '2026-10-10',
+    streakDays: 31,
+    weeklyTarget: 18,
+    thisWeek: 11,
+    focus: 'Graphs',
+    topics: [
+      { name: 'Arrays & Hashing',      solved: 9,  total: 9  },
+      { name: 'Two Pointers',          solved: 5,  total: 5  },
+      { name: 'Sliding Window',        solved: 0,  total: 6  },
+      { name: 'Stack',                 solved: 7,  total: 7  },
+      { name: 'Binary Search',         solved: 6,  total: 7  },
+      { name: 'Linked List',           solved: 0,  total: 11 },
+      { name: 'Trees',                 solved: 14, total: 15 },
+      { name: 'Tries',                 solved: 0,  total: 3  },
+      { name: 'Heap / Priority Queue', solved: 7,  total: 7  },
+      { name: 'Backtracking',          solved: 8,  total: 9  },
+      { name: 'Graphs',                solved: 9,  total: 13 },
+      { name: 'Advanced Graphs',       solved: 0,  total: 6  },
+      { name: '1-D DP',                solved: 10, total: 12 },
+      { name: '2-D DP',                solved: 8,  total: 11 },
+      { name: 'Greedy',                solved: 0,  total: 8  },
+      { name: 'Intervals',             solved: 0,  total: 6  },
+      { name: 'Math & Geometry',       solved: 0,  total: 8  },
+      { name: 'Bit Manipulation',      solved: 0,  total: 7  }
+    ],
+    milestones: [
+      { label: 'Next checkpoint', value: '130 / 150',      eta: 'Est. 6 days' },
+      { label: 'Mock interviews', value: '3 this month',   eta: 'Scheduled' },
+      { label: 'Revision round',  value: 'Blind 75 recap', eta: 'In queue' }
+    ]
+  }
+};
+</script>
 
 <!-- ===== Log content (markdown) ===== -->
 <script type="text/markdown" id="md-scroll-synced-video">
@@ -907,6 +1024,69 @@ Build your own version — pick one neon, one dark, one mono font. The rest is j
   document.getElementById('rclose').addEventListener('click', closePost);
   reader.addEventListener('click', function (e) { if (e.target === reader) closePost(); });
   window.addEventListener('keydown', function (e) { if (e.key === 'Escape' && reader.classList.contains('open')) closePost(); });
+
+  /* ---------- Progress trackers (data: window.TRACKERS) ---------- */
+  (function () {
+    var T = window.TRACKERS || {}, modal = document.getElementById('trk'), panel = document.getElementById('trk-panel'), back = null;
+    var MO = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    function e(s) { return escapeHtml(String(s == null ? '' : s)); }
+    function d(s) { var p = String(s || '').split('-'); return p.length === 3 ? (+p[2]) + ' ' + MO[+p[1] - 1] + ' ' + p[0] : e(s); }
+    function pct(a, b) { return b > 0 ? Math.round(Math.min(a, b) / b * 100) : 0; }
+    function calc(t) {
+      var topics = (t.topics || []).map(function (x) { var s = Math.max(0, Math.min(+x.solved || 0, +x.total || 0)); return { name: x.name, solved: s, total: +x.total || 0 }; });
+      var solved = 0, total = 0, done = 0;
+      topics.forEach(function (x) { solved += x.solved; total += x.total; if (x.total && x.solved >= x.total) done++; });
+      return { topics: topics, solved: solved, total: total, done: done, p: pct(solved, total) };
+    }
+    function status(x) {
+      if (x.total && x.solved >= x.total) return '<span class="st done"><b>✓</b>complete</span>';
+      if (x.solved > 0) return '<span class="st"><b>▸</b>in progress</span>';
+      return '<span class="st"><b>○</b>not started</span>';
+    }
+    function render(key) {
+      var t = T[key], c = calc(t), wk = t.weeklyTarget ? pct(t.thisWeek || 0, t.weeklyTarget) : null;
+      var h = '<div class="trk-head"><div><span class="mono eyebrow">' + e(t.tag || t.name) + '</span><h2 id="trk-title">' + e(t.name) + '</h2>' + (t.note ? '<p>' + e(t.note) + '</p>' : '') + '</div>' +
+        '<button type="button" class="xbtn" data-close aria-label="Close tracker"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:1.8"><path d="M3 3 L13 13 M13 3 L3 13"></path></svg></button></div>';
+      h += '<div class="trk-hero"><div class="trk-big">' + c.p + '<small>%</small></div><div class="trk-bar"><span class="mono eyebrow" style="font-size:12px">' + c.solved + ' of ' + c.total + ' problems solved</span>' +
+        '<div class="bar" role="img" aria-label="' + c.p + ' percent complete"><i data-w="' + c.p + '" style="width:0"></i></div></div></div>';
+      h += '<div class="trk-tiles">' +
+        '<div class="tile"><span class="k mono">Solved</span><span class="v">' + c.solved + '<span style="color:var(--muted);font-size:.6em"> / ' + c.total + '</span></span><span class="s mono">' + (c.total - c.solved) + ' left</span></div>' +
+        '<div class="tile"><span class="k mono">Topics complete</span><span class="v">' + c.done + '<span style="color:var(--muted);font-size:.6em"> / ' + c.topics.length + '</span></span><span class="s mono">' + (t.focus ? 'focus: ' + e(t.focus) : '&nbsp;') + '</span></div>' +
+        (wk != null ? '<div class="tile"><span class="k mono">This week</span><span class="v">' + (t.thisWeek || 0) + '<span style="color:var(--muted);font-size:.6em"> / ' + t.weeklyTarget + '</span></span><div class="bar" style="height:6px;margin-top:4px"><i data-w="' + wk + '" style="width:0"></i></div></div>' : '') +
+        (t.streakDays != null ? '<div class="tile"><span class="k mono">Streak</span><span class="v">' + t.streakDays + '<span style="color:var(--muted);font-size:.6em"> days</span></span><span class="s mono">keep it going</span></div>' : '') +
+        '</div>';
+      h += '<div class="trk-sec"><span class="k mono">By topic</span><div class="trk-rows">' + c.topics.map(function (x) {
+        var p = pct(x.solved, x.total);
+        return '<div class="trow"><span class="n">' + e(x.name) + '</span><div class="bar" title="' + e(x.name) + ': ' + x.solved + ' / ' + x.total + ' (' + p + '%)"><i data-w="' + p + '" style="width:0"></i></div><span class="c mono">' + x.solved + ' / ' + x.total + '</span>' + status(x) + '</div>';
+      }).join('') + '</div></div>';
+      if (t.milestones && t.milestones.length) h += '<div class="trk-sec"><span class="k mono">Milestones</span><div class="trk-ms">' + t.milestones.map(function (m) {
+        return '<div class="ms"><span class="k mono">' + e(m.label) + '</span><span class="v">' + e(m.value) + '</span>' + (m.eta ? '<span class="s mono">' + e(m.eta) + '</span>' : '') + '</div>';
+      }).join('') + '</div></div>';
+      h += '<div class="trk-foot mono">self-reported progress · last updated ' + d(t.updated) + '</div>';
+      panel.innerHTML = h;
+      requestAnimationFrame(function () { requestAnimationFrame(function () {
+        panel.querySelectorAll('[data-w]').forEach(function (i) { i.style.width = i.getAttribute('data-w') + '%'; });
+      }); });
+    }
+    function open(key, btn) {
+      if (!T[key]) return;
+      back = btn || document.activeElement;
+      render(key);
+      modal.classList.add('open'); modal.scrollTop = 0; document.body.style.overflow = 'hidden';
+      var x = panel.querySelector('[data-close]'); if (x) x.focus();
+    }
+    function close() { modal.classList.remove('open'); document.body.style.overflow = ''; if (back) back.focus(); }
+    modal.addEventListener('click', function (ev) { if (ev.target === modal || ev.target.closest('[data-close]')) close(); });
+    window.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && modal.classList.contains('open')) close(); });
+    document.querySelectorAll('[data-tracker]').forEach(function (b) {
+      var key = b.getAttribute('data-tracker'), t = T[key];
+      if (!t) return;
+      var c = calc(t), bar = b.querySelector('.trk-mini i'), k = b.querySelector('.trk-mini-k');
+      if (bar) setTimeout(function () { bar.style.width = c.p + '%'; }, 300);
+      if (k) k.textContent = c.solved + ' / ' + c.total + ' solved · ' + c.p + '%';
+      b.addEventListener('click', function () { open(key, b); });
+    });
+  })();
 
   /* ---------- Blog graph ---------- */
   var M = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
