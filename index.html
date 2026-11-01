@@ -206,6 +206,21 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 :focus-visible{outline:2px solid var(--a);outline-offset:3px}
 @media (max-width:760px){.layer{grid-template-columns:minmax(0,1fr);gap:8px}.bg-area{height:440px}.sec{padding-top:104px}}
 @media (prefers-reduced-motion: reduce){.ra *{animation-play-state:paused !important}html{scroll-behavior:auto}}
+/* contact form */
+.tx{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:760px;padding:28px;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-sizing:border-box}
+.tx-head{grid-column:1 / -1;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tx label{display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tx .full{grid-column:1 / -1}
+.tx input,.tx textarea{font:inherit;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:15px;letter-spacing:0;text-transform:none;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:12px 14px;outline:none;transition:border-color .25s ease;width:100%;box-sizing:border-box}
+.tx textarea{min-height:150px;resize:vertical;line-height:1.5}
+.tx input:focus,.tx textarea:focus{border-color:var(--a)}
+.tx .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.tx-foot{grid-column:1 / -1;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.tx button{border:0;cursor:pointer;font-family:inherit}
+.tx button[disabled]{opacity:.55;cursor:wait;transform:none}
+.tx-status{font-size:13px;color:var(--muted)}
+.tx-status.ok{color:var(--a)}.tx-status.err{color:var(--b)}
+@media (max-width:640px){.tx{grid-template-columns:minmax(0,1fr);padding:20px}}
 </style>
 </head>
 <body>
@@ -426,6 +441,15 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 <a href="https://www.kaggle.com/arushbadhe" target="_blank" rel="noopener noreferrer">Kaggle</a>
 </div>
 </div>
+<form class="tx mono" id="tx" novalidate>
+<div class="tx-head"><span>open_channel // compose</span><span>to: arush.badhe</span></div>
+<label>Name<input type="text" name="name" autocomplete="name" required maxlength="100" placeholder="Ada Lovelace"></label>
+<label>Email<input type="email" name="email" autocomplete="email" required maxlength="150" placeholder="you@domain.com"></label>
+<label class="full">Subject<input type="text" name="subject" maxlength="150" placeholder="Internship / collaboration / hello"></label>
+<label class="full">Message<textarea name="message" required maxlength="5000" placeholder="Write your transmission..."></textarea></label>
+<label class="hp" aria-hidden="true">Leave empty<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+<div class="tx-foot"><button type="submit" class="btn btn-solid" id="tx-send">Transmit →</button><span class="tx-status" id="tx-status" role="status" aria-live="polite"></span></div>
+</form>
 <div class="mono uplink">
 <span>RESPONSE<b>≤ 24 cycles</b></span>
 <span>STATUS<b class="on">NODE_ACTIVE</b></span>
@@ -953,6 +977,44 @@ window.TRACKERS = {
   }).catch(function () {
     var r = document.getElementById('bg');
     if (r) r.innerHTML = '<p class="mono note" style="padding:24px 0">Logs could not be loaded. Serve this folder over HTTP (for example <b>python3 -m http.server</b>) — browsers block reading .md files from file://.</p>';
+  });
+})();
+</script>
+<!-- =====================================================================
+     CONTACT FORM — EmailJS
+     Fill in TEMPLATE_ID and PUBLIC_KEY from your EmailJS dashboard.
+     Template variables used: {{name}} {{email}} {{subject}} {{message}}
+     ===================================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+(function(){
+  var EMAILJS = {
+    SERVICE_ID:  'service_10pozhx',
+    TEMPLATE_ID: 'template_89ij8xl',
+    PUBLIC_KEY:  'deOozDRh1pTDXkxzm'
+  };
+  var f=document.getElementById('tx'); if(!f) return;
+  var btn=document.getElementById('tx-send'), st=document.getElementById('tx-status');
+  function say(t,c){st.textContent=t;st.className='tx-status'+(c?' '+c:'');}
+  var ready=window.emailjs && EMAILJS.PUBLIC_KEY.indexOf('YOUR_')!==0;
+  if(ready) emailjs.init({publicKey:EMAILJS.PUBLIC_KEY});
+  var last=0;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f.company.value) { say('Transmission sent ✓','ok'); f.reset(); return; } // bot trap
+    var n=f.name.value.trim(), m=f.email.value.trim(), msg=f.message.value.trim();
+    if(!n||!msg){ say('Name and message are required.','err'); return; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m)){ say('Please enter a valid email.','err'); return; }
+    if(Date.now()-last<30000){ say('Please wait a moment before sending again.','err'); return; }
+    if(!ready){ say('Contact form is not configured yet.','err'); return; }
+    btn.disabled=true; say('Transmitting...');
+    emailjs.send(EMAILJS.SERVICE_ID,EMAILJS.TEMPLATE_ID,{
+      name:n, email:m, subject:f.subject.value.trim()||'(no subject)', message:msg
+    }).then(function(){
+      last=Date.now(); f.reset(); say('Transmission sent ✓ — I\'ll reply within 24 cycles.','ok');
+    },function(){
+      say('Send failed. Try again, or reach me on GitHub.','err');
+    }).finally(function(){ btn.disabled=false; });
   });
 })();
 </script>
