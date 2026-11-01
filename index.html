@@ -3,19 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Arush Badhe — Portfolio</title>
-<meta name="description" content="Arush Badhe — AI/ML engineer building intelligent, scalable systems. Experience, education, projects, skills, logs and contact.">
+<title>Arush Badhe — AI/ML Engineer</title>
+<meta name="description" content="Arush Badhe — AI/ML engineer. Scroll to zoom from a language model down through the GPU cluster, the silicon and the tensor cores that run it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
 <style>
-:root{--bg:#0A0C10;--panel:#10141B;--line:rgba(232,236,241,.10);--text:#E8ECF1;--muted:#A3ADBB;--a:#6EE7C5;--b:#F5C26B;--u:1s;color-scheme:dark}
+
+:root{--bg:#05070D;--panel:#0B1020;--line:rgba(234,240,255,.10);--text:#EAF0FF;--muted:#8D97B5;--a:#5BD1FF;--b:#FF7A45;--u:1s;color-scheme:dark}
 html{scroll-behavior:smooth}
-body{margin:0;background:#0A0C10}
-a{color:#E8ECF1}a:hover{color:#6EE7C5}
-.ra{font-family:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif;color:var(--text);background:var(--bg);min-height:100vh;overflow-x:clip}
+body{margin:0;background:#05070D}
+a{color:#EAF0FF}a:hover{color:#5BD1FF}
+.ra{font-family:'Geist',ui-sans-serif,system-ui,sans-serif;color:var(--text);background:var(--bg);min-height:100vh;overflow-x:clip}
 .ra a:hover{color:var(--a)}
-.mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+.mono{font-family:'Geist Mono',ui-monospace,Menlo,monospace}
 .wrap{max-width:1200px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px);box-sizing:border-box;width:100%}
 .eyebrow{margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .ix{color:var(--a);margin-right:6px;font-size:11px;vertical-align:super}
@@ -28,15 +29,15 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 .sec-head>div{display:flex;flex-direction:column;gap:16px}
 .note{margin:0;font-size:14px;color:var(--muted)}
 .btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:600;transition:transform .25s ease,border-color .25s ease}
-.btn-solid{background:var(--a);color:#0A0C10}
-.ra .btn-solid:hover{color:#0A0C10;transform:translateY(-2px)}
+.btn-solid{background:var(--a);color:#05070D}
+.ra .btn-solid:hover{color:#05070D;transform:translateY(-2px)}
 .btn-ghost{border:1px solid var(--line);color:var(--text);font-weight:500}
 .ra .btn-ghost:hover{border-color:var(--a)}
 .status{display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
 .status i{width:8px;height:8px;border-radius:50%;background:var(--a);box-shadow:0 0 12px var(--a);animation:blink calc(var(--u) * 2.4) ease-in-out infinite}
 @keyframes blink{50%{opacity:.35}}
 .hero{position:relative}
-.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(232,236,241,.13) 1px,transparent 1.4px);background-size:28px 28px;-webkit-mask-image:radial-gradient(ellipse at 70% 45%,#000 0%,transparent 70%);mask-image:radial-gradient(ellipse at 70% 45%,#000 0%,transparent 70%);pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(234,240,255,.13) 1px,transparent 1.4px);background-size:28px 28px;-webkit-mask-image:radial-gradient(ellipse at 70% 45%,#000 0%,transparent 70%);mask-image:radial-gradient(ellipse at 70% 45%,#000 0%,transparent 70%);pointer-events:none}
 .nn{position:relative;width:100%;max-width:460px;aspect-ratio:46/32;margin-inline:auto}
 .ew{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none}
 .ew line{vector-effect:non-scaling-stroke;stroke-linecap:round}
@@ -89,13 +90,13 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 .prof .go{margin-top:auto;font-size:12px;color:var(--a)}
 /* tracker cards */
 .trk-card{font:inherit;text-align:left;cursor:pointer;width:100%}
-.trk-mini{display:block;height:6px;border-radius:3px;background:rgba(232,236,241,.10);overflow:hidden}
+.trk-mini{display:block;height:6px;border-radius:3px;background:rgba(234,240,255,.10);overflow:hidden}
 .trk-mini i{display:block;height:100%;width:0;border-radius:3px;background:var(--a);transition:width .8s cubic-bezier(.2,.8,.2,1)}
 .trk-mini-k{font-size:12px;color:var(--muted);margin-top:-6px}
 /* tracker dashboard */
 .trk{position:fixed;inset:0;z-index:60;background:rgba(5,6,9,.78);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:5vh 16px}
 .trk.open{display:flex}
-.trk-panel{position:relative;width:100%;max-width:880px;box-sizing:border-box;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:clamp(22px,4vw,40px);display:flex;flex-direction:column;gap:28px;color:var(--text);font-family:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif}
+.trk-panel{position:relative;width:100%;max-width:880px;box-sizing:border-box;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:clamp(22px,4vw,40px);display:flex;flex-direction:column;gap:28px;color:var(--text);font-family:'Geist',ui-sans-serif,system-ui,sans-serif}
 .trk-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
 .trk-head h2{margin:8px 0 0;font-size:clamp(30px,4vw,44px);font-weight:600;letter-spacing:-.02em;line-height:1}
 .trk-head p{margin:10px 0 0;font-size:15px;line-height:1.5;color:var(--muted);max-width:56ch}
@@ -104,7 +105,7 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 .trk-big small{font-size:.4em;font-weight:600;color:var(--muted);margin-left:4px;letter-spacing:-.01em}
 .trk-bar{flex:1 1 260px;display:flex;flex-direction:column;gap:8px;padding-bottom:8px}
 .trk-bar .bar{height:10px}
-.bar{position:relative;height:8px;border-radius:4px;background:rgba(232,236,241,.10);overflow:hidden}
+.bar{position:relative;height:8px;border-radius:4px;background:rgba(234,240,255,.10);overflow:hidden}
 .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:4px;background:var(--a);transition:width .9s cubic-bezier(.2,.8,.2,1)}
 .trk-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr));gap:12px}
 .tile{border:1px solid var(--line);border-radius:8px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
@@ -130,7 +131,7 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 @media (max-width:640px){.trow{grid-template-columns:minmax(0,1fr) 64px;row-gap:8px}.trow .bar{grid-column:1 / -1;grid-row:2}.trow .st{grid-column:1 / -1}}
 .sub{display:flex;flex-direction:column;gap:20px;padding-top:28px}
 .hob{display:flex;flex-direction:column;gap:16px}
-.vid{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;border:1px solid var(--line);border-radius:8px;background-color:var(--panel);background-image:radial-gradient(rgba(232,236,241,.10) 1px,transparent 1.4px);background-size:22px 22px;text-decoration:none;overflow:hidden;transition:border-color .3s ease;cursor:pointer;padding:0;width:100%;font:inherit;color:inherit}
+.vid{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;border:1px solid var(--line);border-radius:8px;background-color:var(--panel);background-image:radial-gradient(rgba(234,240,255,.10) 1px,transparent 1.4px);background-size:22px 22px;text-decoration:none;overflow:hidden;transition:border-color .3s ease;cursor:pointer;padding:0;width:100%;font:inherit;color:inherit}
 .ra .vid:hover{border-color:var(--a)}
 .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
 .vid .vthumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82;transition:opacity .3s ease,transform .5s cubic-bezier(.2,.8,.2,1)}
@@ -141,7 +142,7 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 .vid .play{box-shadow:0 6px 24px rgba(0,0,0,.45)}
 .play{width:68px;height:68px;border-radius:50%;background:var(--a);display:flex;align-items:center;justify-content:center;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
 .vid:hover .play{transform:scale(1.08)}
-.play svg{width:22px;height:22px;margin-left:4px;fill:#0A0C10}
+.play svg{width:22px;height:22px;margin-left:4px;fill:#05070D}
 .vurl{position:absolute;left:16px;bottom:14px;font-size:12px;color:var(--muted)}
 .hob h3{margin:0;font-size:23px;font-weight:600;letter-spacing:-.015em}
 .hob p{margin:0;font-size:16px;line-height:1.55;color:var(--muted);max-width:52ch}
@@ -155,39 +156,39 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 .uplink b{display:block;color:var(--text);font-weight:500;margin-top:4px}
 .uplink .on{color:var(--a)}
 /* blog graph */
-.bg{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;color:#E8ECF1;display:flex;flex-direction:column;gap:18px;width:100%;box-sizing:border-box}
+.bg{font-family:'Geist Mono',ui-monospace,Menlo,monospace;color:#EAF0FF;display:flex;flex-direction:column;gap:18px;width:100%;box-sizing:border-box}
 .bg-tags{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .bg-tags .lbl{font-size:12px;color:var(--muted);margin-right:6px;text-transform:uppercase;letter-spacing:.06em}
-.chip{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid rgba(232,236,241,.20);background:transparent;color:#E8ECF1;font-family:inherit;font-size:13px;cursor:pointer;transition:background .2s ease}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid rgba(234,240,255,.20);background:transparent;color:#EAF0FF;font-family:inherit;font-size:13px;cursor:pointer;transition:background .2s ease}
 .chip span{opacity:.6}
-.chip[aria-pressed="true"]{background:var(--a);border-color:var(--a);color:#0A0C10}
+.chip[aria-pressed="true"]{background:var(--a);border-color:var(--a);color:#05070D}
 .bg-row{display:flex;flex-wrap:wrap;gap:20px;align-items:stretch}
-.bg-area{position:relative;flex:999 1 560px;min-width:0;height:560px;border:1px solid rgba(232,236,241,.10);border-radius:8px;background:rgba(16,20,27,.55);overflow:hidden}
+.bg-area{position:relative;flex:999 1 560px;min-width:0;height:560px;border:1px solid rgba(234,240,255,.10);border-radius:8px;background:rgba(16,20,27,.55);overflow:hidden}
 .bg-area svg{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
 .bg-area line{vector-effect:non-scaling-stroke;transition:stroke .25s ease}
 .bg-pulse{position:absolute;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:var(--a);pointer-events:none}
 .bg-lab{position:absolute;transform:translateX(-50%);width:132px;text-align:center;font-size:11px;line-height:1.3;pointer-events:none;transition:opacity .25s ease}
 .bg-node{position:absolute;transform:translate(-50%,-50%);padding:0;border:none;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:opacity .25s ease}
 .bg-node span{display:block;border-radius:50%;background:var(--a);box-sizing:border-box;transition:box-shadow .2s ease}
-.bg-side{flex:1 1 300px;min-width:0;box-sizing:border-box;padding:26px;background:#10141B;border:1px solid rgba(232,236,241,.10);border-radius:8px;display:flex;flex-direction:column;gap:16px}
+.bg-side{flex:1 1 300px;min-width:0;box-sizing:border-box;padding:26px;background:#0B1020;border:1px solid rgba(234,240,255,.10);border-radius:8px;display:flex;flex-direction:column;gap:16px}
 .bg-side .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-.bg-side h3{margin:0;font-family:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif;font-weight:600;font-size:26px;line-height:1.15;letter-spacing:-.01em}
+.bg-side h3{margin:0;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;font-weight:600;font-size:26px;line-height:1.15;letter-spacing:-.01em}
 .bg-side p{margin:0;font-size:14px;line-height:1.6;color:var(--muted)}
 .bg-side .pt{display:flex;flex-wrap:wrap;gap:6px}
-.bg-side .pt span{font-size:12px;padding:4px 10px;border:1px solid rgba(232,236,241,.22);border-radius:999px}
-.bg-side .foot{display:flex;flex-direction:column;gap:4px;margin-top:auto;padding-top:14px;border-top:1px solid rgba(232,236,241,.10)}
+.bg-side .pt span{font-size:12px;padding:4px 10px;border:1px solid rgba(234,240,255,.22);border-radius:999px}
+.bg-side .foot{display:flex;flex-direction:column;gap:4px;margin-top:auto;padding-top:14px;border-top:1px solid rgba(234,240,255,.10)}
 .bg-side .foot .k{padding-bottom:4px}
-.rowbtn{display:flex;justify-content:space-between;gap:12px;min-height:36px;align-items:center;padding:0;border:none;background:transparent;color:#E8ECF1;font-family:inherit;font-size:13px;text-align:left;cursor:pointer}
+.rowbtn{display:flex;justify-content:space-between;gap:12px;min-height:36px;align-items:center;padding:0;border:none;background:transparent;color:#EAF0FF;font-family:inherit;font-size:13px;text-align:left;cursor:pointer}
 .rowbtn:hover{color:var(--a)}
 .rowbtn span+span{color:var(--muted);white-space:nowrap}
-.xbtn{width:44px;height:44px;margin:-10px -12px -10px 0;display:flex;align-items:center;justify-content:center;border:none;background:transparent;color:#E8ECF1;cursor:pointer}
+.xbtn{width:44px;height:44px;margin:-10px -12px -10px 0;display:flex;align-items:center;justify-content:center;border:none;background:transparent;color:#EAF0FF;cursor:pointer}
 .readlink{font-size:14px;color:var(--a);text-underline-offset:4px;background:none;border:0;padding:0;font-family:inherit;cursor:pointer;text-decoration:underline;align-self:flex-start}
 /* reader */
 .reader{position:fixed;inset:0;z-index:50;background:rgba(5,6,9,.78);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:5vh 16px}
 .reader.open{display:flex}
-.reader article{position:relative;width:100%;max-width:760px;box-sizing:border-box;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:clamp(22px,4vw,48px);font-family:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif;color:var(--text)}
+.reader article{position:relative;width:100%;max-width:760px;box-sizing:border-box;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:clamp(22px,4vw,48px);font-family:'Geist',ui-sans-serif,system-ui,sans-serif;color:var(--text)}
 .reader .rhead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
-.md{font-size:17px;line-height:1.65;color:#C9D1DC;overflow-wrap:anywhere}
+.md{font-size:17px;line-height:1.65;color:#C3CCE6;overflow-wrap:anywhere}
 .md h1{font-size:clamp(30px,4vw,42px);line-height:1.05;letter-spacing:-.02em;color:var(--text);margin:.2em 0 .6em}
 .md h2{font-size:24px;letter-spacing:-.015em;color:var(--text);margin:1.6em 0 .5em}
 .md strong{color:var(--text)}
@@ -195,12 +196,12 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 .md hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 .md ul,.md ol{padding-left:1.3em}.md li{margin:.3em 0}
 .md blockquote{margin:1.2em 0;padding:4px 0 4px 18px;border-left:2px solid var(--a);color:var(--text)}
-.md code{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:.86em;background:rgba(110,231,197,.08);color:var(--a);padding:.1em .35em;border-radius:4px}
-.md pre{background:#0A0C10;border:1px solid var(--line);border-radius:6px;padding:16px 18px;overflow-x:auto}
-.md pre code{background:none;color:#D6DEE8;padding:0;font-size:13.5px;line-height:1.6}
+.md code{font-family:'Geist Mono',ui-monospace,Menlo,monospace;font-size:.86em;background:rgba(91,209,255,.08);color:var(--a);padding:.1em .35em;border-radius:4px}
+.md pre{background:#05070D;border:1px solid var(--line);border-radius:6px;padding:16px 18px;overflow-x:auto}
+.md pre code{background:none;color:#D3DAF0;padding:0;font-size:13.5px;line-height:1.6}
 .md table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
 .md th,.md td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left}
-.md th{color:var(--muted);font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.md th{color:var(--muted);font-family:'Geist Mono',monospace;font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
 .md .yt{position:relative;aspect-ratio:16/9;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:1.2em 0}
 .md .yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 :focus-visible{outline:2px solid var(--a);outline-offset:3px}
@@ -211,7 +212,7 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 .tx-head{grid-column:1 / -1;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .tx label{display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .tx .full{grid-column:1 / -1}
-.tx input,.tx textarea{font:inherit;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:15px;letter-spacing:0;text-transform:none;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:12px 14px;outline:none;transition:border-color .25s ease;width:100%;box-sizing:border-box}
+.tx input,.tx textarea{font:inherit;font-family:'Geist Mono',ui-monospace,Menlo,monospace;font-size:15px;letter-spacing:0;text-transform:none;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:12px 14px;outline:none;transition:border-color .25s ease;width:100%;box-sizing:border-box}
 .tx textarea{min-height:150px;resize:vertical;line-height:1.5}
 .tx input:focus,.tx textarea:focus{border-color:var(--a)}
 .tx .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
@@ -221,53 +222,178 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 .tx-status{font-size:13px;color:var(--muted)}
 .tx-status.ok{color:var(--a)}.tx-status.err{color:var(--b)}
 @media (max-width:640px){.tx{grid-template-columns:minmax(0,1fr);padding:20px}}
+
+/* ================= THE DESCENT — page layer ================= */
+:root{--bg:#05070D;--panel:rgba(9,13,26,.72);--panel-solid:#0B1020;--line:rgba(140,170,255,.13);--text:#EAF0FF;--muted:#8D97B5;--a:#5BD1FF;--b:#FF7A45;--v:#9D8CFF;
+  --col:min(640px,calc(100vw - 2 * var(--gut)));--gut:clamp(18px,5vw,72px);--disp:'Unbounded','Geist',ui-sans-serif,system-ui,sans-serif;--sans:'Geist',ui-sans-serif,system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+.ra{font-family:var(--sans);background:transparent;position:relative;z-index:2;min-height:0}
+.mono{font-family:var(--mono)}
+a{color:var(--text)} a:hover,.ra a:hover{color:var(--a)}
+::selection{background:rgba(91,209,255,.3)}
+
+/* ---------- fixed layers ---------- */
+#descent{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:block;opacity:0;transition:opacity 1.6s ease}
+#descent.on{opacity:1}
+.no-webgl #descent{display:none}
+.no-webgl body{background:radial-gradient(ellipse at 75% 40%,rgba(91,209,255,.16),transparent 60%),var(--bg)}
+#zoomflash{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0;background:radial-gradient(circle at 68% 50%,rgba(200,235,255,.55),rgba(91,209,255,.12) 30%,transparent 62%);mix-blend-mode:screen}
+#veil{position:fixed;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(5,7,13,.92) 0%,rgba(5,7,13,.72) 34%,rgba(5,7,13,0) 58%)}
+@media (max-width:979px){#veil{background:linear-gradient(180deg,rgba(5,7,13,.25),rgba(5,7,13,.65))}}
+
+/* ---------- header ---------- */
+.top{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px var(--gut);font-size:13px;
+  background:linear-gradient(180deg,rgba(5,7,13,.85),rgba(5,7,13,0));}
+.brand{text-decoration:none;font-weight:500;letter-spacing:.02em;font-size:14px}
+.brand span{color:var(--a);margin:0 1px}
+.top nav{display:flex;gap:22px;flex-wrap:wrap;justify-content:flex-end}
+.top .nl{text-decoration:none;color:var(--muted);font-size:13px;transition:color .25s ease}
+.top .nl:hover,.top .nl.active{color:var(--text)}
+.top .nl.active{color:var(--a)}
+.top .cta{color:var(--bg)!important;background:var(--a);padding:6px 12px;border-radius:999px;margin:-6px 0;font-weight:500}
+@media (max-width:860px){.top nav .nl:not(.cta){display:none}}
+
+/* ---------- HUD + magnification ladder ---------- */
+.hud{position:fixed;right:var(--gut);bottom:22px;z-index:10;width:300px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:rgba(5,8,18,.6);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:11px;color:var(--muted);letter-spacing:.04em;pointer-events:none}
+.hud-row{display:flex;justify-content:space-between;align-items:baseline;color:var(--text);font-size:12px;letter-spacing:.08em}
+.hud-row b{font-family:var(--disp);font-weight:600;font-size:18px;color:var(--a);letter-spacing:0}
+.hud-note{margin-top:6px;line-height:1.5}
+.hud-tel{display:flex;justify-content:space-between;gap:10px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.hud-tel b{display:block;color:var(--text);font-weight:500;margin-top:2px;font-variant-numeric:tabular-nums}
+.ladder{position:fixed;right:var(--gut);top:50%;transform:translateY(-50%);z-index:10;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;
+  font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(141,151,181,.6);text-align:right;pointer-events:none}
+.ladder li{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-direction:row-reverse;transition:color .4s ease}
+.ladder i{width:18px;height:1px;background:currentColor;transition:width .4s ease,background .4s ease}
+.ladder li.on{color:var(--a)}
+.ladder li.on i{width:34px;background:var(--a);box-shadow:0 0 10px var(--a)}
+@media (max-width:1180px){.ladder{display:none}}
+@media (max-width:979px){.hud{left:var(--gut);right:var(--gut);width:auto;bottom:12px;padding:10px 12px}.hud-note,.hud-tel{display:none}}
+
+/* ---------- chapters ---------- */
+.chap{position:relative;min-height:125vh;display:flex;align-items:center;padding:120px var(--gut);box-sizing:border-box}
+.chap .col{width:var(--col);display:flex;flex-direction:column;gap:26px}
+.chap.wide .col{width:min(1120px,calc(100vw - 2 * var(--gut)))}
+.chap.mid .col{width:min(820px,calc(100vw - 2 * var(--gut)))}
+.head{display:flex;flex-direction:column;gap:14px}
+.eyebrow{margin:0;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.eyebrow b{color:var(--a);font-weight:500}
+.h2{margin:0;font-family:var(--disp);font-weight:600;font-size:clamp(32px,4.2vw,58px);line-height:1.02;letter-spacing:-.03em}
+.blurb{margin:0;font-size:17px;line-height:1.55;color:var(--muted);max-width:46ch}
+.display{margin:0;font-family:var(--disp);font-weight:800;font-size:clamp(54px,8.4vw,124px);line-height:.92;letter-spacing:-.045em}
+.panel{padding:clamp(18px,3vw,30px);background:var(--panel);border:1px solid var(--line);border-radius:14px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+
+/* hero */
+.hero{min-height:100vh;padding-top:96px}
+.hero .col{gap:24px}
+.prompt{display:flex;align-items:center;gap:12px;font-size:15px;color:var(--text);padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:rgba(9,13,26,.6);width:fit-content;max-width:100%;box-sizing:border-box}
+.prompt .pp{color:var(--a);font-size:18px;line-height:1}
+.caret{width:8px;height:17px;background:var(--a);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lede{margin:0;font-size:clamp(18px,1.6vw,21px);line-height:1.5;color:var(--muted);max-width:36ch}
+.lede .hl{color:var(--text)}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--a);box-shadow:0 0 12px var(--a);animation:blink 2.4s ease-in-out infinite}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:600;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.btn-solid{background:var(--a);color:#05070D}
+.ra .btn-solid:hover{color:#05070D;transform:translateY(-2px);box-shadow:0 8px 30px rgba(91,209,255,.35)}
+.btn-ghost{border:1px solid var(--line);color:var(--text);font-weight:500;background:rgba(9,13,26,.5)}
+.ra .btn-ghost:hover{border-color:var(--a)}
+.cue{position:absolute;left:var(--gut);bottom:28px;display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.cue b{color:var(--a);font-weight:500}
+.cue i{width:1px;height:34px;background:linear-gradient(var(--a),transparent);animation:drop 1.8s ease-in-out infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- restyled components ---------- */
+.ra h3{font-family:var(--sans);font-weight:600;letter-spacing:-.01em}
+.stack{padding-left:30px}
+.layer{grid-template-columns:minmax(0,150px) minmax(0,1fr);gap:6px 22px;padding:22px 0}
+.layer .tags{display:none}
+.layer h3{font-size:19px;margin:0}
+.layer p{font-size:14px}
+.layer::before{left:-31px;top:30px;border-color:var(--a)}
+.lix{font-size:12px;color:var(--a);letter-spacing:.02em}
+.card,.edu{background:var(--panel)!important;border:1px solid var(--line)!important;border-radius:14px!important;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.card{transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s ease,box-shadow .35s ease}
+.ra .card:hover{border-color:rgba(91,209,255,.5)!important;box-shadow:0 0 0 1px rgba(91,209,255,.15),0 20px 50px -20px rgba(91,209,255,.35)}
+.card h3{font-family:var(--disp);font-weight:600;font-size:16px;letter-spacing:.02em}
+.heat{width:96px;gap:4px}
+.heat span{border-radius:1px}
+.wgroup{border-top:1px solid var(--line)}
+.wgroup li{font-size:15px}
+.sub>.eyebrow{font-size:11px}
+.bg-area{background:rgba(9,13,26,.45)!important;border-color:var(--line)!important;border-radius:14px!important;backdrop-filter:blur(3px)}
+.bg-side{background:var(--panel)!important;border-color:var(--line)!important;border-radius:14px!important;backdrop-filter:blur(14px)}
+.chip{border-color:var(--line)}
+.vid{border-radius:12px!important;background-color:rgba(9,13,26,.7)!important;border-color:var(--line)!important}
+.hob h3{font-family:var(--sans)}
+.trk-panel,.reader article{background:var(--panel-solid)!important;border-radius:14px!important}
+.tx{background:var(--panel)!important;border-color:var(--line)!important;border-radius:14px!important;backdrop-filter:blur(14px);max-width:none}
+.tx input,.tx textarea{background:rgba(5,7,13,.7)!important;border-radius:8px!important}
+.out .display{font-size:clamp(56px,9vw,132px)}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:22px;font-size:14px}
+.links .mail{font-family:var(--sans);font-size:clamp(20px,2.4vw,28px);text-decoration:none;border-bottom:2px solid var(--a);padding-bottom:3px}
+.uplink{display:flex;gap:28px;flex-wrap:wrap;font-size:11px;letter-spacing:.08em;color:var(--muted)}
+.uplink b{display:block;color:var(--text);font-weight:500;margin-top:4px}
+.uplink .on{color:var(--a)}
+.foot{position:relative;z-index:2;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:26px var(--gut) 120px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+.split-line{padding-bottom:.08em;margin-bottom:-.08em}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+@media (max-width:979px){.chap{min-height:auto;padding:110px var(--gut) 90px}.hero{min-height:100svh}.layer{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){#descent{transition:none}.caret,.cue i,.status i{animation:none}}
+
 </style>
 </head>
 <body>
-<div class="ra" id="ra">
+<canvas id="descent" aria-hidden="true"></canvas>
+<div id="zoomflash" aria-hidden="true"></div>
+<div id="veil" aria-hidden="true"></div>
 
-<header class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:28px;padding-bottom:28px">
-<a href="#top" class="mono" style="text-decoration:none;font-size:15px;letter-spacing:.02em">T[<span style="color:var(--a)">arush·badhe</span>]</a>
-<nav class="mono" aria-label="Primary" style="display:flex;gap:24px;flex-wrap:wrap">
-<a href="#experience" class="nl"><span class="ix">0</span>experience</a>
-<a href="#education" class="nl"><span class="ix">1</span>education</a>
-<a href="#projects" class="nl"><span class="ix">2</span>projects</a>
-<a href="#skills" class="nl"><span class="ix">3</span>skills</a>
-<a href="#blog" class="nl"><span class="ix">4</span>logs</a>
-<a href="#hobbies" class="nl"><span class="ix">5</span>hobbies</a>
-<a href="#contact" class="nl"><span class="ix">6</span>uplink</a>
-</nav>
+<header class="top mono">
+  <a href="#top" class="brand">arush<span>/</span>badhe</a>
+  <nav aria-label="Primary">
+    <a href="#experience" class="nl">experience</a>
+    <a href="#education" class="nl">education</a>
+    <a href="#projects" class="nl">projects</a>
+    <a href="#skills" class="nl">skills</a>
+    <a href="#blog" class="nl">logs</a>
+    <a href="#hobbies" class="nl">hobbies</a>
+    <a href="#contact" class="nl cta">prompt me</a>
+  </nav>
 </header>
 
-<main>
-<section id="top" class="wrap hero" style="display:flex;flex-wrap:wrap;align-items:center;gap:48px;min-height:640px;padding-top:24px;padding-bottom:72px">
-<div style="flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:30px;position:relative">
-<p class="mono eyebrow">T ∈ ℝ<sup>4×4×4</sup></p>
-<h1 class="display">Arush<br>Badhe</h1>
-<p class="lede"><span style="color:var(--text)">AI/ML Engineer</span> building intelligent, scalable systems. Transforming data into real-world impact.</p>
-<span class="mono status"><i aria-hidden="true"></i>actively seeking internship opportunities</span>
-<div style="display:flex;gap:14px;flex-wrap:wrap">
-<a href="#projects" class="btn btn-solid">See the work</a>
-<a href="#blog" class="btn btn-ghost mono">read my logs →</a>
-</div>
-</div>
-<div style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:20px;position:relative">
-<div class="nn" id="nn" aria-hidden="true"></div>
-<div class="nn-labels mono" aria-hidden="true">
-<span style="left:8%">x</span><span style="left:36%">h₁</span><span style="left:64%">h₂</span><span style="left:92%">ŷ</span>
-</div>
-<div class="mats mono" id="mats" aria-hidden="true"></div>
-<p class="mono caption">fig. 0 — a forward pass. Activations flow left to right; each W is the weight matrix drawn above it.</p>
-</div>
+<aside class="hud mono" aria-hidden="true">
+  <div class="hud-row"><span id="hud-lv">L0 · MODEL</span><b id="hud-sc">1×</b></div>
+  <div id="hud-note" class="hud-note">12 layers · 7B params · 1 token at a time</div>
+  <div class="hud-tel"><span>THROUGHPUT <b id="hud-fl">3.10 TFLOP/s</b></span><span>TOKENS/S <b id="hud-tk">12,400</b></span></div>
+</aside>
+<ol class="ladder mono" aria-hidden="true">
+  <li class="on"><i></i>model</li><li><i></i>cluster</li><li><i></i>gpu</li><li><i></i>die</li><li><i></i>tensor core</li><li><i></i>latent</li>
+</ol>
+
+<main class="ra" id="ra">
+
+<section id="top" class="chap hero">
+  <div class="col">
+    <p class="mono eyebrow">L0 · THE MODEL — a forward pass, from the top</p>
+    <h1 class="display">Arush<br>Badhe</h1>
+    <div class="prompt mono" aria-label="who is arush badhe?"><span class="pp">›</span><span id="ptxt">who is arush badhe?</span><i class="caret" aria-hidden="true"></i></div>
+    <p class="lede"><span class="hl">AI/ML Engineer</span> building intelligent, scalable systems. Transforming data into real-world impact.</p>
+    <span class="mono status"><i aria-hidden="true"></i>actively seeking internship opportunities</span>
+    <div class="actions">
+      <a href="#projects" class="btn btn-solid">See the work</a>
+      <a href="#blog" class="btn btn-ghost mono">read my logs →</a>
+    </div>
+  </div>
+  <div class="cue mono" aria-hidden="true"><span>scroll to descend</span><b>1× → 10⁸×</b><i></i></div>
 </section>
 
-<div class="marquee mono" aria-hidden="true"><div class="track" id="track"></div></div>
-
-<section id="experience" class="wrap sec">
-<div class="sec-head">
-<div><p class="mono eyebrow">dim 0 — experience</p><h2 class="h2">The forward pass.</h2></div>
-<p class="mono note">CAREER.PROTOCOL · most recent layer on top</p>
-</div>
+<section id="experience" class="chap">
+  <div class="col">
+    <div class="head"><p class="mono eyebrow"><b>ZOOM 01</b> · inference cluster</p><h2 class="h2">Deployed to production.</h2><p class="blurb">Thousands of GPUs serve a single model. These are the places I've been serving.</p></div>
+    <div class="panel">
 <div class="stack">
 <span class="spark" aria-hidden="true"></span>
 <div class="layer">
@@ -286,13 +412,13 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 <span class="mono tags">Part time</span>
 </div>
 </div>
+    </div>
+  </div>
 </section>
 
-<section id="education" class="wrap sec">
-<div class="sec-head">
-<div><p class="mono eyebrow">dim 1 — education</p><h2 class="h2">Pre-training.</h2></div>
-<p class="mono note">ACQUISITION.PATH // TRACED</p>
-</div>
+<section id="education" class="chap">
+  <div class="col">
+    <div class="head"><p class="mono eyebrow"><b>ZOOM 02</b> · one gpu</p><h2 class="h2">Pre-training corpus.</h2><p class="blurb">Every model is shaped by what it learns first.</p></div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:20px">
 <div class="edu">
 <span class="mono lix">EDU.04 · 2024 — present</span>
@@ -319,26 +445,25 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 <p class="mono" style="font-size:13px">focus: Mathematics · Science · Computing</p>
 </div>
 </div>
+  </div>
 </section>
 
-<section id="projects" class="wrap sec">
-<div class="sec-head">
-<div><p class="mono eyebrow">dim 2 — projects</p><h2 class="h2">Slices of what I've built.</h2></div>
-<p class="mono note">for i in range(4): show(T[i, :, :])</p>
-</div>
+<section id="projects" class="chap">
+  <div class="col">
+    <div class="head"><p class="mono eyebrow"><b>ZOOM 03</b> · the die</p><h2 class="h2">Kernels I've shipped.</h2><p class="blurb">132 streaming multiprocessors, each running its own slice of the work.</p></div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:20px" id="projgrid">
 <a href="#projects" class="card"><span class="mono idx">T[0, :, :]</span><div class="heat" data-seed="1" aria-hidden="true"></div><h3>PROJECT.ALPHA</h3><p>Full-stack web platform with real-time sync, JWT auth, and responsive dashboard.</p><span class="mono tags">React · Node · MongoDB</span></a>
 <a href="#projects" class="card"><span class="mono idx">T[1, :, :]</span><div class="heat" data-seed="2" aria-hidden="true"></div><h3>NEURAL.PIPE</h3><p>End-to-end ML pipeline for image classification with REST deployment on cloud.</p><span class="mono tags">Python · TensorFlow · FastAPI</span></a>
 <a href="#projects" class="card"><span class="mono idx">T[2, :, :]</span><div class="heat" data-seed="3" aria-hidden="true"></div><h3>DSA.TRACKER</h3><p>LeetCode + Codeforces progress tracker with A2Z sheet integration and analytics.</p><span class="mono tags">React · Firebase · Tailwind</span></a>
 <a href="#projects" class="card"><span class="mono idx">T[3, :, :]</span><div class="heat" data-seed="4" aria-hidden="true"></div><h3>CIPHER.CLI</h3><p>High-performance cryptography CLI tool with Redis caching and container deploy.</p><span class="mono tags">Go · Redis · Docker</span></a>
 </div>
+  </div>
 </section>
 
-<section id="skills" class="wrap sec">
-<div class="sec-head">
-<div><p class="mono eyebrow">dim 3 — skills</p><h2 class="h2">Learned weights.</h2></div>
-<p class="mono note">TECH.STACK // VERIFIED</p>
-</div>
+<section id="skills" class="chap">
+  <div class="col">
+    <div class="head"><p class="mono eyebrow"><b>ZOOM 04</b> · tensor core</p><h2 class="h2">Learned weights.</h2><p class="blurb">D = A·B + C — the one operation everything else is built from.</p></div>
+    <div class="panel">
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(190px,100%),1fr));gap:32px">
 <div class="wgroup"><span class="mono lix">W[0] · languages</span><ul><li>Python</li><li>C++</li><li>Java</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li></ul></div>
 <div class="wgroup"><span class="mono lix">W[1] · ML &amp; data</span><ul><li>TensorFlow</li><li>PyTorch</li><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li><li>OpenCV</li></ul></div>
@@ -356,21 +481,20 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 <button type="button" class="card prof trk-card" data-tracker="neetcode" aria-haspopup="dialog"><span class="mono idx">NEETCODE 150</span><h3>NeetCode 150</h3><p>Curated FAANG interview prep problem set</p><span class="trk-mini" aria-hidden="true"><i></i></span><span class="mono trk-mini-k"></span><span class="mono go">open tracker →</span></button>
 </div>
 </div>
+    </div>
+  </div>
 </section>
 
-<section id="blog" class="wrap sec">
-<div class="sec-head">
-<div><p class="mono eyebrow">dim 4 — logs</p><h2 class="h2">Latent space.</h2></div>
-<p class="mono note" style="max-width:46ch">J.A.R.V.I.S. // LOGS — posts wired together by shared tags</p>
-</div>
+<section id="blog" class="chap wide">
+  <div class="col">
+    <div class="head"><p class="mono eyebrow"><b>ZOOM 05</b> · embeddings</p><h2 class="h2">Latent space.</h2><p class="blurb">Posts as points, wired together when they share a tag.</p></div>
 <div class="bg" id="bg"></div>
+  </div>
 </section>
 
-<section id="hobbies" class="wrap sec">
-<div class="sec-head">
-<div><p class="mono eyebrow">dim 5 — hobbies &amp; achievements</p><h2 class="h2">Off-distribution.</h2></div>
-<p class="mono note">PERSONAL.DIRECTIVES // LOADED</p>
-</div>
+<section id="hobbies" class="chap mid">
+  <div class="col">
+    <div class="head"><p class="mono eyebrow"><b>ZOOM 05</b> · outliers</p><h2 class="h2">Off-distribution.</h2><p class="blurb">The points that don't fit the cluster are the interesting ones.</p></div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:28px">
 <div class="hob">
 <button type="button" class="vid" data-yt="naA0TolwnbQ" aria-label="Play video: Swimming"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"></path></svg></span><span class="mono vurl">youtube.com/watch?v=naA0TolwnbQ</span></button>
@@ -428,41 +552,42 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 </div>
 </div>
 </div>
+  </div>
 </section>
 
-<section id="contact" class="wrap sec" style="gap:32px;padding-top:168px;padding-bottom:120px">
-<p class="mono eyebrow">dim 6 — uplink · open_channel // secure_transmission</p>
-<h2 class="display" style="font-size:clamp(48px,8vw,112px)">Let's contract<br>an index.</h2>
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:32px">
-<a href="https://github.com/Arubad" target="_blank" rel="noopener noreferrer" class="mail">github.com/Arubad</a>
-<div class="mono" style="display:flex;gap:24px;flex-wrap:wrap;font-size:14px">
-<a href="https://leetcode.com/u/YXdB8UMU0q/" target="_blank" rel="noopener noreferrer">LeetCode</a>
-<a href="https://codeforces.com/profile/arushbadhe" target="_blank" rel="noopener noreferrer">Codeforces</a>
-<a href="https://www.kaggle.com/arushbadhe" target="_blank" rel="noopener noreferrer">Kaggle</a>
-</div>
-</div>
-<form class="tx mono" id="tx" novalidate>
-<div class="tx-head"><span>open_channel // compose</span><span>to: arush.badhe</span></div>
-<label>Name<input type="text" name="name" autocomplete="name" required maxlength="100" placeholder="Ada Lovelace"></label>
-<label>Email<input type="email" name="email" autocomplete="email" required maxlength="150" placeholder="you@domain.com"></label>
-<label class="full">Subject<input type="text" name="subject" maxlength="150" placeholder="Internship / collaboration / hello"></label>
-<label class="full">Message<textarea name="message" required maxlength="5000" placeholder="Write your transmission..."></textarea></label>
-<label class="hp" aria-hidden="true">Leave empty<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
-<div class="tx-foot"><button type="submit" class="btn btn-solid" id="tx-send">Transmit →</button><span class="tx-status" id="tx-status" role="status" aria-live="polite"></span></div>
-</form>
-<div class="mono uplink">
-<span>RESPONSE<b>≤ 24 cycles</b></span>
-<span>STATUS<b class="on">NODE_ACTIVE</b></span>
-<span>LOOKING FOR<b>Internships · AI/ML</b></span>
-</div>
+<section id="contact" class="chap out">
+  <div class="col">
+    <p class="mono eyebrow"><b>L0 · OUTPUT</b> · next token</p>
+    <h2 class="display">Prompt<br>me.</h2>
+    <p class="blurb">Every forward pass ends in a single next token. Make it a message.</p>
+    <div class="links mono">
+      <a href="https://github.com/Arubad" target="_blank" rel="noopener noreferrer" class="mail">github.com/Arubad</a>
+      <a href="https://leetcode.com/u/YXdB8UMU0q/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+      <a href="https://codeforces.com/profile/arushbadhe" target="_blank" rel="noopener noreferrer">Codeforces</a>
+      <a href="https://www.kaggle.com/arushbadhe" target="_blank" rel="noopener noreferrer">Kaggle</a>
+    </div>
+    <form class="tx mono" id="tx" novalidate>
+      <div class="tx-head"><span>prompt // compose</span><span>to: arush.badhe</span></div>
+      <label>Name<input type="text" name="name" autocomplete="name" required maxlength="100" placeholder="Ada Lovelace"></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required maxlength="150" placeholder="you@domain.com"></label>
+      <label class="full">Subject<input type="text" name="subject" maxlength="150" placeholder="Internship / collaboration / hello"></label>
+      <label class="full">Message<textarea name="message" required maxlength="5000" placeholder="Write your prompt..."></textarea></label>
+      <label class="hp" aria-hidden="true">Leave empty<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+      <div class="tx-foot"><button type="submit" class="btn btn-solid" id="tx-send">Generate →</button><span class="tx-status" id="tx-status" role="status" aria-live="polite"></span></div>
+    </form>
+    <div class="mono uplink">
+      <span>RESPONSE<b>≤ 24 hours</b></span>
+      <span>STATUS<b class="on">NODE_ACTIVE</b></span>
+      <span>LOOKING FOR<b>Internships · AI/ML</b></span>
+    </div>
+  </div>
 </section>
-</main>
 
-<footer class="wrap mono" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:28px;padding-bottom:40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)">
-<span>© <span id="yr">2026</span> Arush Badhe</span>
-<span>rendered at rank 3</span>
+<footer class="foot mono">
+  <span>© <span id="yr">2026</span> Arush Badhe</span>
+  <span>rendered one token at a time</span>
 </footer>
-</div>
+</main>
 
 <div class="reader" id="reader" role="dialog" aria-modal="true" aria-labelledby="rtitle">
 <article>
@@ -475,13 +600,6 @@ a{color:#E8ECF1}a:hover{color:#6EE7C5}
 <div class="trk-panel" id="trk-panel"></div>
 </div>
 
-<!-- =====================================================================
-     PROGRESS TRACKERS — EDIT YOUR NUMBERS HERE
-     Update `solved` for each topic, then `updated`, `streakDays`,
-     `thisWeek` and the milestones. Totals, percentages and the
-     complete / in progress / not started labels are calculated
-     automatically. Commit the file and the live site updates.
-     ===================================================================== -->
 <script>
 window.TRACKERS = {
   striver: {
@@ -557,12 +675,11 @@ window.TRACKERS = {
 };
 </script>
 
-<!-- Log content lives in ./posts/*.md — list each file in ./posts/posts.json -->
-
 <script>
+
 (function () {
   'use strict';
-  var ACCENT = '#6EE7C5', NEG = '#F5C26B';
+  var ACCENT = '#5BD1FF', NEG = '#FF7A45';
   var reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   document.getElementById('yr').textContent = new Date().getFullYear();
 
@@ -574,40 +691,6 @@ window.TRACKERS = {
   }
   var SVGNS = 'http://www.w3.org/2000/svg';
   function sv(tag, attrs) { var e = document.createElementNS(SVGNS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
-
-  /* ---------- Hero: neural network forward pass ---------- */
-  (function () {
-    var sizes = [4, 6, 6, 3], xs = [8, 36, 64, 92], sub = ['₁', '₂', '₃'];
-    var rnd = function (s) { var v = Math.sin(s * 12.9898) * 43758.5453; return v - Math.floor(v); };
-    var Y = function (n, i) { return 50 + (i - (n - 1) / 2) * 15; };
-    var nn = document.getElementById('nn'), mats = document.getElementById('mats');
-    var base = sv('svg', { 'class': 'ew', viewBox: '0 0 100 100', preserveAspectRatio: 'none' });
-    var fire = sv('svg', { 'class': 'ew', viewBox: '0 0 100 100', preserveAspectRatio: 'none' });
-    for (var l = 0; l < 3; l++) {
-      var wm = el('div', { 'class': 'wm', style: 'grid-template-columns:repeat(' + sizes[l] + ',9px)' });
-      for (var j = 0; j < sizes[l + 1]; j++) for (var k = 0; k < sizes[l]; k++) {
-        var w = rnd(100 + l * 50 + j * 7 + k) * 2 - 1, aw = Math.abs(w), c = w >= 0 ? ACCENT : NEG;
-        var x1 = xs[l], y1 = Y(sizes[l], k).toFixed(2), x2 = xs[l + 1], y2 = Y(sizes[l + 1], j).toFixed(2);
-        base.appendChild(sv('line', { x1: x1, y1: y1, x2: x2, y2: y2, style: 'stroke:' + c + ';stroke-opacity:' + (0.08 + 0.3 * aw).toFixed(2) + ';stroke-width:' + (0.8 + 1.6 * aw).toFixed(2) + 'px' }));
-        if (aw > 0.4) fire.appendChild(sv('line', { 'class': 'syn', pathLength: '100', x1: x1, y1: y1, x2: x2, y2: y2, style: 'stroke:' + c + ';stroke-opacity:' + (0.5 + 0.5 * aw).toFixed(2) + ';--l:' + l }));
-        wm.appendChild(el('span', { style: 'background:' + c + ';--o:' + (0.15 + 0.85 * aw).toFixed(2) + ';--l:' + l }));
-      }
-      var box = el('div', { 'class': 'wmat' });
-      box.appendChild(wm);
-      box.appendChild(el('span', null, 'W' + sub[l] + ' · ' + sizes[l + 1] + '×' + sizes[l]));
-      mats.appendChild(box);
-    }
-    nn.appendChild(base); nn.appendChild(fire);
-    for (var L = 0; L < 4; L++) for (var i = 0; i < sizes[L]; i++) {
-      var s = L === 0 ? 14 : (L === 3 ? 18 : 16);
-      var n = el('span', { 'class': 'neu', style: 'left:' + xs[L] + '%;top:' + Y(sizes[L], i).toFixed(2) + '%;width:' + s + 'px;height:' + s + 'px;--l:' + L + ';--o:' + (0.45 + 0.55 * rnd(L * 10 + i + 1)).toFixed(2) });
-      n.appendChild(el('span'));
-      nn.appendChild(n);
-    }
-    var t = ['softmax(QKᵀ/√d)·V', '∂ℒ/∂W', "einsum('bij,bjk→bik')", 'tr(AᵀB)', '‖x‖₂', 'X = UΣVᵀ', '∇·F', 'σ(Wx + b)', '𝔼[x]', 'A ⊗ B'];
-    var track = document.getElementById('track');
-    t.concat(t).forEach(function (s) { var sp = el('span'); sp.appendChild(el('b', null, '·')); sp.appendChild(document.createTextNode(s)); track.appendChild(sp); });
-  })();
 
   /* ---------- Project heatmaps ---------- */
   document.querySelectorAll('.heat').forEach(function (h) {
@@ -940,13 +1023,13 @@ window.TRACKERS = {
       if (force) {
         n.btn.style.opacity = n.lab.style.opacity = dim ? 0.2 : 1;
         n.lab.style.color = (on || isF) ? '#E8ECF1' : '#A3ADBB';
-        n.dot.style.boxShadow = isF ? '0 0 0 6px rgba(232,236,241,.10), 0 0 28px ' + ACCENT : (on ? '0 0 16px ' + ACCENT : 'none');
+        n.dot.style.boxShadow = isF ? '0 0 0 6px rgba(234,240,255,.10), 0 0 28px ' + ACCENT : (on ? '0 0 16px ' + ACCENT : 'none');
       }
     });
     E.forEach(function (e, k) {
       var a = pos[e.a], b = pos[e.b], on = !!edgeOn[k], w = e.shared.length, l = lines[k];
       l.setAttribute('x1', a.x.toFixed(2)); l.setAttribute('y1', a.y.toFixed(2)); l.setAttribute('x2', b.x.toFixed(2)); l.setAttribute('y2', b.y.toFixed(2));
-      l.style.stroke = on ? ACCENT : (anyF ? 'rgba(232,236,241,.07)' : 'rgba(232,236,241,.26)');
+      l.style.stroke = on ? ACCENT : (anyF ? 'rgba(234,240,255,.07)' : 'rgba(234,240,255,.26)');
       l.style.strokeWidth = (1 + (w - 1) * 1.4 + (on ? 0.8 : 0)).toFixed(1) + 'px';
       var p = pulses[k];
       if (!reduce && (!anyF || on)) {
@@ -979,7 +1062,9 @@ window.TRACKERS = {
     if (r) r.innerHTML = '<p class="mono note" style="padding:24px 0">Logs could not be loaded. Serve this folder over HTTP (for example <b>python3 -m http.server</b>) — browsers block reading .md files from file://.</p>';
   });
 })();
+
 </script>
+
 <!-- =====================================================================
      CONTACT FORM — EmailJS
      Fill in TEMPLATE_ID and PUBLIC_KEY from your EmailJS dashboard.
@@ -1017,6 +1102,646 @@ window.TRACKERS = {
     }).finally(function(){ btn.disabled=false; });
   });
 })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script>
+<script>
+/* ===== chapter choreography (GSAP + ScrollTrigger) ===== */
+(function () {
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  if (!window.gsap || !window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+  var split = !!window.SplitText; if (split) gsap.registerPlugin(SplitText);
+
+  /* nav highlights the chapter you're in */
+  ['experience', 'education', 'projects', 'skills', 'blog', 'hobbies', 'contact'].forEach(function (id) {
+    var s = document.getElementById(id); if (!s) return;
+    ScrollTrigger.create({ trigger: s, start: 'top 55%', end: 'bottom 55%', onToggle: function (st) {
+      $$('.nl[href="#' + id + '"]').forEach(function (a) { a.classList.toggle('active', st.isActive); });
+    } });
+  });
+
+  function noTrans(t) { gsap.set(t, { transition: 'none' }); }
+  function done(t) { gsap.set(t, { clearProps: 'transition,transform,opacity,visibility' }); }
+
+  var mm = gsap.matchMedia();
+  mm.add('(prefers-reduced-motion: no-preference)', function () {
+    /* hero: name rises, then the prompt types and the model "answers" */
+    var tl = gsap.timeline({ defaults: { ease: 'expo.out' }, delay: .2 });
+    var h1 = $('#top h1'), ptxt = $('#ptxt'), full = ptxt ? ptxt.textContent : '';
+    if (split && h1) { var hs = SplitText.create(h1, { type: 'lines,chars', mask: 'lines', linesClass: 'split-line' }); tl.from(hs.chars, { yPercent: 118, duration: 1.3, stagger: .05 }); }
+    tl.from('#top .eyebrow', { autoAlpha: 0, y: 10, duration: .8 }, .1);
+    if (ptxt) {
+      ptxt.textContent = '';
+      tl.from('#top .prompt', { autoAlpha: 0, y: 14, duration: .7 }, .5);
+      var o = { n: 0 };
+      tl.to(o, { n: full.length, duration: full.length * .045, ease: 'none', onUpdate: function () { ptxt.textContent = full.slice(0, Math.round(o.n)); } }, .9);
+    }
+    noTrans($$('#top .btn'));
+    tl.from(['#top .lede', '#top .status', '#top .actions'], { autoAlpha: 0, y: 18, duration: .9, stagger: .1, onComplete: function () { done($$('#top .btn')); } }, '>-0.1')
+      .from('#top .cue', { autoAlpha: 0, duration: 1 }, '<.3');
+    gsap.to('#top .col', { yPercent: -10, autoAlpha: 0, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom 20%', scrub: .4 } });
+    gsap.to('#top .cue', { autoAlpha: 0, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: '25% top', scrub: true } });
+
+    /* chapter heads: eyebrow, title (word by word), blurb */
+    $$('.chap:not(.hero) .head, .chap.out .col').forEach(function (head) {
+      var tl2 = gsap.timeline({ scrollTrigger: { trigger: head, start: 'top 80%', once: true } });
+      var e = head.querySelector('.eyebrow'), h = head.querySelector('.h2, .display'), b = head.querySelector('.blurb');
+      if (e) tl2.from(e, { autoAlpha: 0, x: -14, duration: .7, ease: 'power3.out' });
+      if (h && split) { var s = SplitText.create(h, { type: 'lines,words', mask: 'lines', linesClass: 'split-line' }); tl2.from(s.words, { yPercent: 115, duration: 1.1, ease: 'expo.out', stagger: .07 }, .05); }
+      if (b) tl2.from(b, { autoAlpha: 0, y: 14, duration: .8, ease: 'power3.out' }, .3);
+    });
+
+    /* panels and cards rise in, like units powering on */
+    var units = $$('.panel, .edu, #projgrid .card, .prof, .bg, .hob, .ach, #contact .links, #contact .tx, #contact .uplink');
+    noTrans(units);
+    gsap.set(units, { autoAlpha: 0, y: 46 });
+    ScrollTrigger.batch(units, { start: 'top 90%', once: true, onEnter: function (b) {
+      gsap.to(b, { autoAlpha: 1, y: 0, duration: 1, ease: 'power3.out', stagger: .09, overwrite: true, onComplete: function () { done(b); } });
+    } });
+    $$('.layer').forEach(function (l) {
+      gsap.from(l.children, { autoAlpha: 0, x: -24, duration: .8, ease: 'power3.out', stagger: .08, scrollTrigger: { trigger: l, start: 'top 88%', once: true } });
+    });
+    $$('.wgroup').forEach(function (g, i) {
+      gsap.from(g.querySelectorAll('.lix, li'), { autoAlpha: 0, y: 8, duration: .45, stagger: .035, delay: i * .05, scrollTrigger: { trigger: g, start: 'top 88%', once: true } });
+    });
+  });
+
+  addEventListener('load', function () { ScrollTrigger.refresh(); });
+  if (window.ResizeObserver) { var t; new ResizeObserver(function () { clearTimeout(t); t = setTimeout(function () { ScrollTrigger.refresh(); }, 200); }).observe(document.body); }
+})();
+
+</script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.min.js"}}</script>
+<script type="module">
+/* =====================================================================
+   THE DESCENT — model → cluster → GPU → die → tensor core → latent space
+   One renderer, one loop. Each level is its own scene; scroll position
+   (0..7, one unit per section) picks which levels draw and where each
+   level's camera sits. Neighbouring levels cross-fade while both
+   cameras keep moving forward, so the whole page reads as one long zoom.
+   ===================================================================== */
+import * as THREE from 'three';
+
+const canvas = document.getElementById('descent');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let renderer;
+try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' }); }
+catch (e) { document.documentElement.classList.add('no-webgl'); }
+
+if (renderer) {
+  renderer.setClearColor(0x05070d, 1);
+  renderer.autoClear = false;
+
+  const C_CYAN = new THREE.Color('#5BD1FF'), C_HEAT = new THREE.Color('#FF7A45'), C_VIOLET = new THREE.Color('#9D8CFF'), C_WHITE = new THREE.Color('#EAF0FF');
+  let seed = 11; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const lerp = (a, b, t) => a + (b - a) * t, clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+  const sstep = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
+  const U = { time: { value: 0 } };            // shared clock
+
+  /* ---------- shared materials ---------- */
+  // glowing points: per-point seed (twinkle phase) and heat (cyan → orange)
+  function pointsMat(color, size, opts = {}) {
+    return new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      uniforms: { uTime: U.time, uFade: { value: 1 }, uSize: { value: size }, uPR: { value: 1 }, uColor: { value: color.clone() }, uHot: { value: C_HEAT },
+                  uBlink: { value: opts.blink || 0 }, uTw: { value: opts.twinkle ?? .35 }, uBoost: { value: 0 } },
+      vertexShader: `attribute float aSeed; attribute float aHeat; uniform float uTime, uSize, uPR, uBlink, uTw, uBoost;
+        varying float vB; varying float vH;
+        void main(){ vec4 mv = modelViewMatrix * vec4(position,1.); gl_Position = projectionMatrix * mv;
+          float tw = 1. - uTw + uTw * sin(uTime * (1.3 + aSeed * 2.) + aSeed * 60.);
+          float bl = uBlink > 0. ? step(.55, fract(sin(floor(uTime * uBlink * (.5 + aSeed)) * 91.3 + aSeed * 437.) * 43758.5)) : 1.;
+          vB = tw * mix(1., bl, uBlink > 0. ? 1. : 0.) + uBoost * aHeat; vH = aHeat;
+          gl_PointSize = uSize * uPR * (10. / -mv.z) * (1. + aHeat * .6); }`,
+      fragmentShader: `uniform vec3 uColor, uHot; uniform float uFade; varying float vB; varying float vH;
+        void main(){ float d = length(gl_PointCoord - .5); float a = smoothstep(.5, .0, d); a = a * a * 1.4 + smoothstep(.16,.08,d);
+          a *= vB * uFade; if (a < .01) discard; gl_FragColor = vec4(mix(uColor, uHot, vH), a); }`
+    });
+  }
+  // lines with pulses travelling along them (attribute aU = position along path, aSeed = phase)
+  function flowMat(color, base, speed, opts = {}) {
+    return new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      uniforms: { uTime: U.time, uFade: { value: 1 }, uColor: { value: color.clone() }, uBase: { value: base }, uSpeed: { value: speed }, uPulse: { value: opts.pulse ?? 1 }, uLen: { value: opts.len || .08 } },
+      vertexShader: `attribute float aU; attribute float aSeed; varying float vU; varying float vS;
+        void main(){ vU = aU; vS = aSeed; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.); }`,
+      fragmentShader: `uniform vec3 uColor; uniform float uTime, uFade, uBase, uSpeed, uPulse, uLen; varying float vU; varying float vS;
+        void main(){ float h = fract(uTime * uSpeed * (.6 + vS * .8) + vS * 7.);
+          float d = abs(vU - h); d = min(d, 1. - d);
+          float p = smoothstep(uLen, 0., d) * uPulse;
+          gl_FragColor = vec4(uColor * (1. + p * 1.5), (uBase + p) * uFade); }`
+    });
+  }
+  function lineSegs(positions, us, seeds, mat) {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+    g.setAttribute('aU', new THREE.Float32BufferAttribute(us, 1));
+    g.setAttribute('aSeed', new THREE.Float32BufferAttribute(seeds, 1));
+    return new THREE.LineSegments(g, mat);
+  }
+  function pointCloud(positions, seeds, heats, mat) {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+    g.setAttribute('aSeed', new THREE.Float32BufferAttribute(seeds, 1));
+    g.setAttribute('aHeat', new THREE.Float32BufferAttribute(heats, 1));
+    return new THREE.Points(g, mat);
+  }
+  // box outline segments appended into arrays (for merged rack/board silhouettes)
+  function boxEdges(out, us, sd, cx, cy, cz, w, h, d, s) {
+    const x0 = cx - w / 2, x1 = cx + w / 2, y0 = cy - h / 2, y1 = cy + h / 2, z0 = cz - d / 2, z1 = cz + d / 2;
+    const v = [[x0,y0,z0],[x1,y0,z0],[x1,y1,z0],[x0,y1,z0],[x0,y0,z1],[x1,y0,z1],[x1,y1,z1],[x0,y1,z1]];
+    const e = [0,1,1,2,2,3,3,0,4,5,5,6,6,7,7,4,0,4,1,5,2,6,3,7];
+    for (let i = 0; i < e.length; i += 2) { out.push(...v[e[i]], ...v[e[i + 1]]); us.push(0, 1); sd.push(s, s); }
+  }
+  // quadratic bezier as a polyline of segments with aU 0..1
+  function arc(out, us, sd, a, b, lift, n, s) {
+    const m = [(a[0] + b[0]) / 2 + lift[0], (a[1] + b[1]) / 2 + lift[1], (a[2] + b[2]) / 2 + lift[2]];
+    let prev = a;
+    for (let i = 1; i <= n; i++) {
+      const t = i / n, it = 1 - t;
+      const p = [0, 1, 2].map(k => it * it * a[k] + 2 * it * t * m[k] + t * t * b[k]);
+      out.push(...prev, ...p); us.push((i - 1) / n, t); sd.push(s, s); prev = p;
+    }
+  }
+
+  const levels = [];
+  function level(name) {
+    const L = { name, scene: new THREE.Scene(), mats: [], cam: new THREE.PerspectiveCamera(42, 1, .05, 400), update: null, camAt: null, fade: 0 };
+    L.add = (obj) => { L.scene.add(obj); if (obj.material) L.mats.push(obj.material); return obj; };
+    levels.push(L); return L;
+  }
+
+  /* =================================================================
+     LEVEL 0 — THE MODEL: a transformer tower, tokens rising through it
+     ================================================================= */
+  const model = level('model');
+  {
+    const LAYERS = 12, COLS = 12, ROWS = 3, GAP = 1.05, W = 7.2, D = 2.2;
+    const lp = [], lu = [], ls = [];
+    const pts = [], ps = [], ph = [];
+    const y0 = -(LAYERS - 1) * GAP / 2;
+    const nodePos = [];
+    for (let l = 0; l < LAYERS; l++) {
+      const y = y0 + l * GAP;
+      boxEdges(lp, lu, ls, 0, y, 0, W, .06, D, rnd());
+      nodePos.push([]);
+      for (let c = 0; c < COLS; c++) for (let r = 0; r < ROWS; r++) {
+        const p = [(c - (COLS - 1) / 2) * (W / COLS), y, (r - (ROWS - 1) / 2) * (D / ROWS)];
+        nodePos[l].push(p); pts.push(...p); ps.push(rnd()); ph.push(rnd() < .08 ? 1 : 0);
+      }
+    }
+    model.add(lineSegs(lp, lu, ls, flowMat(C_CYAN, .38, .12, { pulse: 1.2, len: .12 })));
+    model.add(pointCloud(pts, ps, ph, pointsMat(C_CYAN, 13, { twinkle: .5 })));
+    // attention: arcs between nodes of neighbouring layers
+    const ap = [], au = [], as = [];
+    for (let l = 0; l < LAYERS - 1; l++) for (let k = 0; k < 14; k++) {
+      const a = nodePos[l][Math.floor(rnd() * nodePos[l].length)], b = nodePos[l + 1][Math.floor(rnd() * nodePos[l + 1].length)];
+      arc(ap, au, as, a, b, [0, 0, (rnd() - .5) * 2.2], 8, rnd());
+    }
+    model.add(lineSegs(ap, au, as, flowMat(C_VIOLET, .09, .5, { len: .1 })));
+    // residual stream: vertical rails on the edges
+    const rp = [], ru = [], rs = [];
+    for (const x of [-W / 2 - .5, W / 2 + .5]) for (const z of [-D / 2, D / 2]) {
+      const s = rnd(); rp.push(x, y0 - 1.5, z, x, -y0 + 1.5, z); ru.push(0, 1); rs.push(s, s);
+    }
+    model.add(lineSegs(rp, ru, rs, flowMat(C_CYAN, .12, .25, { len: .05 })));
+    // tokens rising through the stack
+    const TOK = 70, tp = new Float32Array(TOK * 3), tseed = [], theat = [];
+    const tok = Array.from({ length: TOK }, () => ({ x: (rnd() - .5) * W * .9, z: (rnd() - .5) * D, y: y0 - 2 + rnd() * (LAYERS * GAP + 4), v: .6 + rnd() * .9 }));
+    tok.forEach(() => { tseed.push(rnd()); theat.push(rnd() < .25 ? 1 : 0); });
+    const tg = pointCloud(tp, tseed, theat, pointsMat(C_WHITE, 12, { twinkle: .2 }));
+    model.add(tg);
+    // the output token: a ring that blooms above the tower
+    const ringP = [], ringU = [], ringS = [];
+    for (let i = 0; i < 64; i++) { const a0 = i / 64 * Math.PI * 2, a1 = (i + 1) / 64 * Math.PI * 2; ringP.push(Math.cos(a0), 0, Math.sin(a0), Math.cos(a1), 0, Math.sin(a1)); ringU.push(i / 64, (i + 1) / 64); ringS.push(.3, .3); }
+    const ring = model.add(lineSegs(ringP, ringU, ringS, flowMat(C_HEAT, .5, .4, { len: .2 })));
+    const outTok = model.add(pointCloud([0, 0, 0], [.5], [1], pointsMat(C_HEAT, 60, { twinkle: .1 })));
+    ring.position.y = outTok.position.y = -y0 + 2.2;
+    model.contact = 0;     // 0 in the hero, 1 in the uplink section (token blooms)
+    model.update = (dt, t) => {
+      for (let i = 0; i < TOK; i++) {
+        const k = tok[i]; k.y += dt * k.v * (reduce ? 0 : 1.6);
+        if (k.y > -y0 + 2) k.y = y0 - 2;
+        tp[i * 3] = k.x + Math.sin(k.y * 1.3 + i) * .15; tp[i * 3 + 1] = k.y; tp[i * 3 + 2] = k.z;
+      }
+      tg.geometry.attributes.position.needsUpdate = true;
+      const c = model.contact, s = .4 + c * 2.6 + Math.sin(t * 2) * .08 * c;
+      ring.scale.set(s, s, s); ring.material.uniforms.uFade.value *= c;
+      outTok.material.uniforms.uFade.value *= c; outTok.material.uniforms.uSize.value = 40 + c * 50;
+      ring.rotation.y = t * .3;
+    };
+    model.camAt = (e, t, win) => {
+      // hero: orbit at a distance, then dive into the middle layer. uplink: pull back out to see the token bloom.
+      if (win === 1) { const k = sstep(0, .42, e), r = lerp(4, 30, k); return { pos: [Math.sin(t * .05 + 2.2) * r, lerp(0, 6, k), Math.cos(t * .05 + 2.2) * r], look: [0, lerp(0, 3.2, k), 0] }; }
+      const k = Math.pow(sstep(.5, 1, e), 1.4), r = lerp(21, 1.2, k), a = .7 + t * .04 + k * 1.4;
+      return { pos: [Math.sin(a) * r, lerp(4, 0, k) + Math.sin(t * .2) * .3, Math.cos(a) * r], look: [0, lerp(.5, 0, k), 0] };
+    };
+  }
+
+  /* =================================================================
+     LEVEL 1 — THE CLUSTER: rows of GPU racks, LEDs, optical cables
+     ================================================================= */
+  const cluster = level('cluster');
+  {
+    const ROWS = 6, COLS = 14, RW = .9, RH = 2.4, RD = 1.1, AISLE = 2.6;
+    const ep = [], eu = [], es = [];
+    const led = [], lseed = [], lheat = [];
+    const cp = [], cu = [], cs = [];
+    for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+      const x = (c - (COLS - 1) / 2) * (RW + .08), z = (r - (ROWS - 1) / 2) * (RD + AISLE);
+      boxEdges(ep, eu, es, x, RH / 2, z, RW, RH, RD, rnd());
+      for (let n = 0; n < 2; n++) for (let m = 0; m < 10; m++) {
+        led.push(x - .22 + n * .44, .25 + m * .21, z + RD / 2 + .01); lseed.push(rnd()); lheat.push(rnd() < .07 ? 1 : 0);
+      }
+    }
+    // overhead cable trays: pulses run along each row and across rows
+    for (let r = 0; r < ROWS; r++) {
+      const z = (r - (ROWS - 1) / 2) * (RD + AISLE), x0 = -(COLS / 2) * (RW + .08), s = rnd();
+      for (let i = 0; i < 20; i++) { cp.push(lerp(x0, -x0, i / 20), RH + .5, z, lerp(x0, -x0, (i + 1) / 20), RH + .5, z); cu.push(i / 20, (i + 1) / 20); cs.push(s, s); }
+    }
+    for (let k = 0; k < 18; k++) {
+      const c = Math.floor(rnd() * COLS), r1 = Math.floor(rnd() * (ROWS - 1));
+      const x = (c - (COLS - 1) / 2) * (RW + .08), z1 = (r1 - (ROWS - 1) / 2) * (RD + AISLE), z2 = z1 + RD + AISLE;
+      arc(cp, cu, cs, [x, RH + .5, z1], [x, RH + .5, z2], [0, 1.2, 0], 10, rnd());
+    }
+    // floor grid
+    const fp = [], fu = [], fs = [];
+    for (let i = -20; i <= 20; i++) { fp.push(i, 0, -20, i, 0, 20, -20, 0, i, 20, 0, i); fu.push(0, 1, 0, 1); fs.push(.5, .5, .5, .5); }
+    cluster.add(lineSegs(fp, fu, fs, flowMat(C_CYAN, .045, 0, { pulse: 0 })));
+    cluster.add(lineSegs(ep, eu, es, flowMat(C_CYAN, .2, .2, { pulse: .5, len: .2 })));
+    const leds = cluster.add(pointCloud(led, lseed, lheat, pointsMat(C_CYAN, 3.2, { blink: 3 })));
+    cluster.add(lineSegs(cp, cu, cs, flowMat(C_VIOLET, .1, .35, { len: .06 })));
+    cluster.camAt = (e, t) => {
+      // sweep in over the hall, then dive at one rack's LEDs
+      const tx = (5 - (COLS - 1) / 2) * (RW + .08), tz = (2 - (ROWS - 1) / 2) * (RD + AISLE) + RD / 2;
+      const k = e;
+      return { pos: [lerp(-14, tx + .2, k) + Math.sin(t * .1) * .3, lerp(11, 1.3, k), lerp(16, tz + .6, k)], look: [lerp(0, tx, k), lerp(0, 1.25, k), lerp(0, tz, k)] };
+    };
+    cluster.update = () => {};
+  }
+
+  /* =================================================================
+     LEVEL 2 — THE GPU: package with die, HBM stacks, interposer traces
+     ================================================================= */
+  const gpu = level('gpu');
+  {
+    const ep = [], eu = [], es = [];
+    boxEdges(ep, eu, es, 0, -.12, 0, 9, .16, 7, .1);       // substrate
+    boxEdges(ep, eu, es, 0, .02, 0, 6.6, .08, 4.6, .3);    // interposer
+    boxEdges(ep, eu, es, 0, .16, 0, 3.2, .16, 3.4, .5);    // die
+    const hbm = [];
+    for (const x of [-2.55, 2.55]) for (const z of [-1.4, 0, 1.4]) {
+      hbm.push([x, z]);
+      for (let k = 0; k < 8; k++) boxEdges(ep, eu, es, x, .1 + k * .09, z, 1.1, .05, 1.15, rnd());
+    }
+    gpu.add(lineSegs(ep, eu, es, flowMat(C_CYAN, .3, .15, { pulse: .6, len: .15 })));
+    // interposer traces die ↔ HBM
+    const tp = [], tu = [], ts = [];
+    hbm.forEach(([x, z]) => {
+      for (let k = 0; k < 9; k++) {
+        const zz = z + (k - 4) * .1, s = rnd(), xd = Math.sign(x) * 1.6, xh = x - Math.sign(x) * .55;
+        tp.push(xd, .07, zz, xh, .07, zz); tu.push(0, 1); ts.push(s, s);
+      }
+    });
+    gpu.add(lineSegs(tp, tu, ts, flowMat(C_HEAT, .12, .9, { len: .12 })));
+    // solder ball grid under the substrate
+    const bp = [], bs = [], bh = [];
+    for (let i = 0; i < 36; i++) for (let j = 0; j < 28; j++) { bp.push(-4.3 + i * .245, -.24, -3.3 + j * .245); bs.push(rnd()); bh.push(0); }
+    gpu.add(pointCloud(bp, bs, bh, pointsMat(C_CYAN, 2.2, { twinkle: .2 })));
+    // die surface: glowing compute grid
+    const dieMat = new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      uniforms: { uTime: U.time, uFade: { value: 1 } },
+      vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.); }`,
+      fragmentShader: `uniform float uTime, uFade; varying vec2 vUv;
+        float h(vec2 p){ return fract(sin(dot(p, vec2(127.1,311.7))) * 43758.5453); }
+        void main(){ vec2 g = vUv * vec2(12., 11.); vec2 id = floor(g), f = fract(g);
+          float cell = step(.08, f.x) * step(.08, f.y) * step(f.x, .92) * step(f.y, .92);
+          float act = .25 + .75 * pow(.5 + .5 * sin(uTime * 2. + h(id) * 30. - length(id - 6.) * .8), 3.);
+          vec3 col = mix(vec3(.36,.82,1.), vec3(1.,.48,.27), step(.86, h(id + floor(uTime * .7))));
+          float band = smoothstep(.02,.0,abs(vUv.y - .5) - .03);
+          gl_FragColor = vec4(col * (cell * act * .55 + band * .5), (cell * act * .7 + band * .4) * uFade); }`
+    });
+    const die = new THREE.Mesh(new THREE.PlaneGeometry(3.1, 3.3), dieMat);
+    die.rotation.x = -Math.PI / 2; die.position.y = .245; gpu.add(die);
+    gpu.camAt = (e, t) => {
+      const a = .9 + t * .03 - e * .9, r = lerp(14, 1.2, e);
+      return { pos: [Math.sin(a) * r * .8, lerp(8, 1.6, e), Math.cos(a) * r * .8], look: [0, .2, 0] };
+    };
+    gpu.update = () => {};
+  }
+
+  /* =================================================================
+     LEVEL 3 — THE DIE: 132 streaming multiprocessors, ~17k lanes
+     resolution-independent shader, so zooming reveals real detail
+     ================================================================= */
+  const dieL = level('die');
+  {
+    const mat = new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false,
+      uniforms: { uTime: U.time, uFade: { value: 1 } },
+      vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.); }`,
+      fragmentShader: `uniform float uTime, uFade; varying vec2 vUv;
+        float h(vec2 p){ return fract(sin(dot(p, vec2(127.1,311.7))) * 43758.5453); }
+        float box(vec2 f, float m, float aa){ vec2 d = min(f, 1. - f); return smoothstep(m, m + aa, min(d.x, d.y)); }
+        void main(){
+          vec2 uv = vUv; vec3 col = vec3(0.); float a = 0.;
+          vec3 CY = vec3(.36,.82,1.), HT = vec3(1.,.48,.27), VI = vec3(.62,.55,1.);
+          // die edge + IO ring
+          float edge = 1. - box(uv, .012, .004); col += CY * edge * .6; a += edge * .6;
+          float io = box(uv, .012, .002) * (1. - box(uv, .035, .002));
+          float pads = step(.5, fract((uv.x + uv.y) * 90.)) * io; col += CY * pads * .25; a += pads * .25;
+          vec2 inner = (uv - .04) / .92;
+          if (all(greaterThan(inner, vec2(0.))) && all(lessThan(inner, vec2(1.)))) {
+            // L2 cache band across the middle
+            float band = abs(inner.y - .5);
+            if (band < .045) {
+              float stripes = .5 + .5 * sin(inner.x * 900.); float fw = fwidth(inner.x * 900.);
+              stripes = mix(stripes, .5, clamp(fw * .3, 0., 1.));
+              float flow = smoothstep(.06, 0., abs(fract(inner.x * 3. - uTime * .4) - .5));
+              col += VI * (.18 + stripes * .12 + flow * .35); a += .3 + flow * .3;
+            } else {
+              vec2 g = vec2(inner.x * 12., (inner.y < .5 ? inner.y / .455 : (inner.y - .545) / .455) * 5.5 + (inner.y < .5 ? 0. : 5.5));
+              vec2 id = floor(g), f = fract(g);
+              float aa = fwidth(g.x) * 1.5;
+              float sm = box(f, .05, aa);
+              float wave = .5 + .5 * sin(uTime * 1.7 - length(id - vec2(5.5, 5.5)) * .9 + h(id) * 2.);
+              float busy = smoothstep(.25, .9, wave) * (.55 + .45 * h(id + 3.));
+              // SM outline
+              float outline = box(f, .05, aa) - box(f, .075, aa); col += CY * outline * .55; a += outline * .5;
+              // 4 partitions per SM, each with a tensor core block and a field of lanes
+              vec2 pg = (f - .08) / .84 * 2.; vec2 pid = floor(pg), pf = fract(pg);
+              if (all(greaterThanEqual(pg, vec2(0.))) && all(lessThan(pg, vec2(2.)))) {
+                float part = box(pf, .04, aa * 2.);
+                float tc = box((pf - vec2(.1, .62)) / vec2(.8, .3), 0., aa * 4.) * step(.62, pf.y) * step(pf.y, .92) * step(.1, pf.x) * step(pf.x, .9);
+                float tcOn = step(.45, fract(uTime * (1.5 + h(id + pid) * 2.) + h(id * 3. + pid)));
+                col += mix(CY, HT, tcOn * busy) * tc * (.25 + tcOn * busy * .9); a += tc * (.3 + tcOn * busy * .6);
+                // lanes: 8x8 cores
+                vec2 lg = (pf - vec2(.1, .08)) / vec2(.8, .5) * 8.; vec2 lid = floor(lg), lf = fract(lg);
+                if (all(greaterThanEqual(lg, vec2(0.))) && all(lessThan(lg, vec2(8.)))) {
+                  float fwl = fwidth(lg.x);
+                  float dotm = smoothstep(.36, .36 - max(fwl, .02), length(lf - .5));
+                  dotm = mix(dotm, .38, clamp(fwl * .6, 0., 1.));
+                  float on = step(.5, fract(sin(dot(id * 17. + pid * 5. + lid, vec2(12.9, 78.2)) + floor(uTime * (4. + 6. * h(lid + id)))) * 43758.5));
+                  float lv = dotm * (.18 + on * busy * .9);
+                  col += mix(CY, HT, on * busy * step(.8, h(lid + id + pid))) * lv; a += lv;
+                }
+                col += CY * (part - box(pf, .055, aa * 2.)) * .2;
+              }
+              col += CY * sm * .03; a += sm * .05;
+            }
+          }
+          gl_FragColor = vec4(col, clamp(a, 0., 1.) * uFade);
+        }`
+    });
+    const plane = new THREE.Mesh(new THREE.PlaneGeometry(10, 10), mat);
+    dieL.add(plane);
+    dieL.camAt = (e, t) => {
+      // start with the whole die, end deep inside one SM partition
+      const z = 14 * Math.pow(.03, Math.pow(e, 2.2));
+      const tx = lerp(0, -1.9, sstep(.2, 1, e)), ty = lerp(0, 1.05, sstep(.2, 1, e));
+      return { pos: [tx + Math.sin(t * .1) * .05 * z, ty - z * .25, z], look: [tx, ty, 0] };
+    };
+    dieL.update = () => {};
+  }
+
+  /* =================================================================
+     LEVEL 4 — THE TENSOR CORE: D = A·B + C as outer products sweeping k
+     ================================================================= */
+  const mm = level('matmul');
+  {
+    const N = 8, S = .78;
+    const geo = new THREE.BoxGeometry(S * .82, S * .82, S * .82);
+    const mat = new THREE.MeshBasicMaterial({ transparent: true, opacity: .9, depthWrite: false, blending: THREE.AdditiveBlending, vertexColors: false });
+    const edgeMat = new THREE.LineBasicMaterial({ color: C_CYAN, transparent: true, opacity: .25, depthWrite: false, blending: THREE.AdditiveBlending });
+    const COUNT = N * N * 3 + N * N * N;
+    const inst = new THREE.InstancedMesh(geo, mat, COUNT);
+    inst.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+    const P = (i, j, k) => [(j - (N - 1) / 2) * S, ((N - 1) / 2 - i) * S, ((N - 1) / 2 - k) * S];
+    const m4 = new THREE.Matrix4(), col = new THREE.Color();
+    const A = [], B = [], Cc = [], Pr = [];
+    const val = (n) => .35 + .65 * rnd();
+    const av = [], bv = [];
+    for (let i = 0; i < N; i++) { av.push([]); for (let k = 0; k < N; k++) av[i].push(val()); }
+    for (let k = 0; k < N; k++) { bv.push([]); for (let j = 0; j < N; j++) bv[k].push(val()); }
+    let n = 0;
+    const GAPX = 1.1;
+    for (let i = 0; i < N; i++) for (let k = 0; k < N; k++) { const p = P(i, -1, k); p[0] -= GAPX; m4.makeTranslation(...p); inst.setMatrixAt(n, m4); A.push(n++); }
+    for (let k = 0; k < N; k++) for (let j = 0; j < N; j++) { const p = P(-1, j, k); p[1] += GAPX; m4.makeTranslation(...p); inst.setMatrixAt(n, m4); B.push(n++); }
+    for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) { const p = P(i, j, -1); p[2] += GAPX; m4.makeTranslation(...p); inst.setMatrixAt(n, m4); Cc.push(n++); }
+    for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) for (let k = 0; k < N; k++) { m4.makeTranslation(...P(i, j, k)).scale(new THREE.Vector3(.45, .45, .45)); inst.setMatrixAt(n, m4); Pr.push(n++); }
+    for (let q = 0; q < COUNT; q++) inst.setColorAt(q, col.set(0x000000));
+    mm.add(inst);
+    // faint cage
+    const cg = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(N * S, N * S, N * S)), edgeMat);
+    mm.add(cg);
+    let acc = new Float32Array(N * N);
+    mm.update = (dt, t) => {
+      const speed = reduce ? 0 : 2.2;
+      const ph = (t * speed) % (N + 2);           // k sweep, two beats of rest to show the finished tile
+      const kNow = Math.floor(ph), fk = ph - kNow, fade = mm.fade;
+      if (kNow === 0 && fk < .05) acc.fill(0);
+      for (let i = 0; i < N; i++) for (let k = 0; k < N; k++) {
+        const on = k === kNow ? 1 - fk * .6 : 0;
+        inst.setColorAt(A[i * N + k], col.copy(C_CYAN).multiplyScalar((.05 + av[i][k] * .12 + on * .75) * fade));
+      }
+      for (let k = 0; k < N; k++) for (let j = 0; j < N; j++) {
+        const on = k === kNow ? 1 - fk * .6 : 0;
+        inst.setColorAt(B[k * N + j], col.copy(C_VIOLET).multiplyScalar((.05 + bv[k][j] * .12 + on * .75) * fade));
+      }
+      for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) {
+        if (kNow < N) acc[i * N + j] = 0; let s = 0;
+        for (let k = 0; k < Math.min(kNow + (kNow < N ? fk : 0), N); k++) s += av[i][Math.floor(k)] * bv[Math.floor(k)][j] * Math.min(1, kNow + fk - k);
+        const v = s / N;
+        inst.setColorAt(Cc[i * N + j], col.copy(C_HEAT).multiplyScalar((.04 + v * 1.1) * fade));
+        for (let k = 0; k < N; k++) {
+          const on = k === kNow ? Math.sin(Math.min(1, fk * 1.4) * Math.PI) : 0;
+          inst.setColorAt(Pr[(i * N + j) * N + k], col.copy(C_WHITE).multiplyScalar((.004 + on * av[i][k] * bv[k][j] * .2) * fade));
+        }
+      }
+      inst.instanceColor.needsUpdate = true;
+      mm.kNow = kNow;
+    };
+    mm.mats = [edgeMat];
+    mm.camAt = (e, t) => {
+      const a = -.75 + t * .06 + e * .9, r = lerp(32, 10, e);
+      return { pos: [Math.sin(a) * r, lerp(15, 5, e), Math.cos(a) * r], look: [0, -.4, 0] };
+    };
+  }
+
+  /* =================================================================
+     LEVEL 5 — LATENT SPACE: embeddings in clusters, a few outliers
+     ================================================================= */
+  const lat = level('latent');
+  {
+    const NP = 1400, pos = [], sd = [], ht = [];
+    const centers = Array.from({ length: 8 }, () => [(rnd() - .5) * 14, (rnd() - .5) * 8, (rnd() - .5) * 14]);
+    const gauss = () => { let u = 0; for (let i = 0; i < 4; i++) u += rnd(); return (u - 2) * .9; };
+    const outl = [];
+    for (let i = 0; i < NP; i++) {
+      if (i % 70 === 0) { const p = [(rnd() - .5) * 30, (rnd() - .5) * 18, (rnd() - .5) * 30]; pos.push(...p); ht.push(1); outl.push(p); }
+      else { const c = centers[i % centers.length], s = 1 + (i % 3) * .4; pos.push(c[0] + gauss() * s, c[1] + gauss() * s * .7, c[2] + gauss() * s); ht.push(0); }
+      sd.push(rnd());
+    }
+    const pc = lat.add(pointCloud(pos, sd, ht, pointsMat(C_CYAN, 10, { twinkle: .3 })));
+    // nearest-centre spokes, like an embedding graph
+    const lp = [], lu = [], ls = [];
+    for (let i = 0; i < NP; i += 6) {
+      if (ht[i]) continue;
+      const c = centers[i % centers.length], s = rnd();
+      lp.push(pos[i * 3], pos[i * 3 + 1], pos[i * 3 + 2], ...c); lu.push(0, 1); ls.push(s, s);
+    }
+    lat.add(lineSegs(lp, lu, ls, flowMat(C_CYAN, .035, .3, { len: .15, pulse: .5 })));
+    // centroid labels as brighter points
+    lat.add(pointCloud(centers.flat(), centers.map(() => rnd()), centers.map(() => 0), pointsMat(C_WHITE, 16, { twinkle: .2 })));
+    lat.outlier = 0;
+    lat.update = (dt, t) => { pc.material.uniforms.uBoost.value = lat.outlier * 1.6; pc.rotation.y = t * .02; };
+    lat.camAt = (e, t) => {
+      // logs: drift through the clusters. hobbies: swing out to the outliers
+      const a = t * .03 + e * 2.4, r = lerp(30, 14, Math.sin(e * Math.PI) * .9 + e * .1);
+      return { pos: [Math.sin(a) * r, lerp(10, 2, e), Math.cos(a) * r], look: [0, 0, 0] };
+    };
+  }
+
+  /* ---------- schedule: which level shows for each scroll position ----------
+     p = 0 hero, 1 experience, 2 education, 3 projects, 4 skills, 5 logs, 6 hobbies, 7 uplink
+     each window: [level, pFrom, pTo, windowId]; camera e runs 0→1 across the window
+  */
+  const WINDOWS = [
+    [model, -.5, .5, 0], [cluster, .5, 1.5, 0], [gpu, 1.5, 2.5, 0], [dieL, 2.5, 3.5, 0],
+    [mm, 3.5, 4.5, 0], [lat, 4.5, 6.5, 0], [model, 6.5, 8.5, 1]
+  ];
+  const XF = .22;   // half-width of each cross-fade
+
+  /* ---------- HUD ---------- */
+  const HUD = [
+    { lv: 'L0 · MODEL', sc: '1×', note: '12 layers · 7B params · 1 token at a time', flops: 0 },
+    { lv: 'L1 · CLUSTER', sc: '×10²', note: '84 racks · 4,096 GPUs · optical fabric', flops: 1 },
+    { lv: 'L2 · GPU', sc: '×10⁴', note: '1 die · 6 HBM stacks · 3.35 TB/s', flops: 2 },
+    { lv: 'L3 · DIE', sc: '×10⁶', note: '132 SMs · 16,896 lanes · 528 tensor cores', flops: 3 },
+    { lv: 'L4 · TENSOR CORE', sc: '×10⁸', note: 'D = A·B + C · 8×8×8 tile · FP8', flops: 4 },
+    { lv: 'L5 · LATENT SPACE', sc: '∂', note: '4,096-d embeddings, projected to 3', flops: 5 },
+    { lv: 'L5 · LATENT SPACE', sc: '∂', note: 'outliers: off-distribution points', flops: 5 },
+    { lv: 'L0 · OUTPUT', sc: '1×', note: 'next token: your message', flops: 0 }
+  ];
+  const hudLv = document.getElementById('hud-lv'), hudSc = document.getElementById('hud-sc'), hudNote = document.getElementById('hud-note'),
+        hudFl = document.getElementById('hud-fl'), hudTk = document.getElementById('hud-tk'), ladder = document.querySelectorAll('.ladder li');
+  let hudIdx = -1;
+  function setHud(p) {
+    const i = clamp(Math.round(p), 0, HUD.length - 1);
+    if (i !== hudIdx && hudLv) {
+      hudIdx = i; const H = HUD[i];
+      hudLv.textContent = H.lv; hudSc.textContent = H.sc; hudNote.textContent = H.note;
+      ladder.forEach((li, n) => li.classList.toggle('on', n === Math.min(5, i === 7 ? 0 : i === 6 ? 5 : i)));
+    }
+  }
+  let telT = 0;
+  function telemetry(dt, t) {
+    telT += dt; if (telT < .12 || !hudFl) return; telT = 0;
+    const lvl = hudIdx < 0 ? 0 : HUD[hudIdx].flops, j = .92 + Math.random() * .16;
+    const fl = [3.1, 812, 1979, 1979, 1979, 0.4][lvl] || 3.1;
+    hudFl.textContent = (fl * j).toLocaleString(undefined, { maximumFractionDigits: fl < 10 ? 2 : 0 }) + (lvl === 1 ? ' PFLOP/s' : ' TFLOP/s');
+    hudTk.textContent = Math.round((lvl === 1 ? 182000 : 12400) * j).toLocaleString();
+  }
+
+  /* ---------- scroll → p ---------- */
+  const ids = ['top', 'experience', 'education', 'projects', 'skills', 'blog', 'hobbies', 'contact'];
+  let anchors = [], pTarget = 0, pNow = 0;
+  function measure() {
+    const vh = innerHeight;
+    anchors = ids.map((id, n) => {
+      const el = document.getElementById(id); if (!el) return n * vh;
+      const top = el.getBoundingClientRect().top + scrollY;
+      return n === 0 ? 0 : Math.max(0, top + Math.min(el.offsetHeight, vh * 1.2) * .5 - vh * .5);
+    });
+    anchors[anchors.length - 1] = Math.min(anchors[anchors.length - 1], document.documentElement.scrollHeight - vh);
+  }
+  function onScroll() {
+    const y = scrollY;
+    if (y <= anchors[0]) { pTarget = 0; return; }
+    for (let n = 0; n < anchors.length - 1; n++) if (y < anchors[n + 1]) { pTarget = n + (y - anchors[n]) / Math.max(1, anchors[n + 1] - anchors[n]); return; }
+    pTarget = anchors.length - 1;
+  }
+
+  /* ---------- sizing ---------- */
+  let wide = true, W = 1, H = 1;
+  function resize() {
+    W = innerWidth; H = innerHeight; wide = W >= 980;
+    renderer.setPixelRatio(Math.min(devicePixelRatio, W < 700 ? 1.5 : 2));
+    renderer.setSize(W, H, false);
+    const pr = renderer.getPixelRatio();
+    levels.forEach(L => {
+      L.cam.aspect = W / H;
+      L.cam.filmGauge = 35; L.cam.filmOffset = wide ? -7 : 0;   // shift the scene right of the reading column
+      L.cam.fov = wide ? 42 : 55;
+      L.cam.updateProjectionMatrix();
+      L.scene.traverse(o => { if (o.material && o.material.uniforms && o.material.uniforms.uPR) o.material.uniforms.uPR.value = pr; });
+    });
+    measure(); onScroll();
+  }
+
+  let mx = 0, my = 0, px = 0, py = 0;
+  addEventListener('pointermove', e => { mx = e.clientX / W - .5; my = e.clientY / H - .5; }, { passive: true });
+
+  function setFade(L, f) {
+    L.fade = f;
+    L.scene.traverse(o => {
+      const m = o.material; if (!m) return;
+      if (m.uniforms && m.uniforms.uFade) m.uniforms.uFade.value = f;
+      else if (m.userData.base === undefined) { m.userData.base = m.opacity; m.opacity = m.userData.base * f; }
+      else m.opacity = m.userData.base * f;
+    });
+  }
+
+  const flash = document.getElementById('zoomflash');
+  const timer = new THREE.Timer();
+  const v3 = new THREE.Vector3();
+  function frame(ts) {
+    timer.update(ts);
+    const dt = Math.min(timer.getDelta(), .05), t = reduce ? 0 : timer.getElapsed();
+    U.time.value = t;
+    pNow += (pTarget - pNow) * (reduce ? 1 : 1 - Math.pow(.004, dt));
+    setHud(pNow); telemetry(dt, t);
+    px += (mx - px) * .04; py += (my - py) * .04;
+
+    renderer.clear();
+    let flashAmt = 0;
+    const drawn = new Set();
+    for (const [L, a, b, win] of WINDOWS) {
+      const fIn = sstep(a - XF, a + XF, pNow), fOut = 1 - sstep(b - XF, b + XF, pNow);
+      let f = (a < 0 ? 1 : fIn) * (b > 8 ? 1 : fOut);
+      if (f <= .002 || drawn.has(L)) continue;
+      drawn.add(L);
+      // camera progress, eased so it lingers while the section is being read and rushes during hand-offs
+      const raw = clamp((pNow - a) / (b - a), 0, 1), u = raw * 2 - 1, e = (Math.sign(u) * Math.pow(Math.abs(u), 1.9) + 1) / 2;
+      if (L === model) model.contact = win === 1 ? sstep(6.6, 7, pNow) : 0;
+      if (L === lat) lat.outlier = sstep(5.4, 6, pNow);
+      setFade(L, f);
+      L.update && L.update(dt, t);
+      const c = L.camAt(e, t, win);
+      L.cam.position.set(...c.pos);
+      v3.set(...c.look); v3.x += px * .6; v3.y -= py * .4;
+      L.cam.lookAt(v3);
+      renderer.render(L.scene, L.cam);
+      if (f < .98) flashAmt = Math.max(flashAmt, 1 - Math.abs(f - .5) * 2);
+    }
+    if (flash) flash.style.opacity = (flashAmt * .55).toFixed(3);
+  }
+
+  resize();
+  addEventListener('resize', resize);
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('load', () => { measure(); onScroll(); });
+  new ResizeObserver(() => { measure(); onScroll(); }).observe(document.body);
+  pNow = pTarget;
+  if (reduce) { frame(0); addEventListener('scroll', () => requestAnimationFrame(frame), { passive: true }); }
+  else renderer.setAnimationLoop(ts => { if (!document.hidden) frame(ts); });
+  requestAnimationFrame(() => canvas.classList.add('on'));
+}
+
 </script>
 </body>
 </html>
