@@ -151,6 +151,18 @@ a{color:#EAF0FF}a:hover{color:#5BD1FF}
 .ach .thumb{aspect-ratio:16/10;border-radius:6px;border:1px solid var(--line);background:var(--panel);overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:44px}
 .ach .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .ach .vid{aspect-ratio:16/10}
+.cert-carousel{display:flex;flex-direction:column;gap:16px}
+.cert-carousel-stage{display:grid;perspective:1200px;touch-action:pan-y;overflow:hidden}
+.cert-carousel-stage .ach{grid-area:1 / 1;opacity:0;pointer-events:none;transform:translate3d(38%,0,-180px) rotateY(-58deg) rotateZ(4deg) scale(.86);transition:transform .55s cubic-bezier(.2,.8,.2,1),opacity .4s ease;will-change:transform,opacity}
+.cert-carousel-stage .ach[data-card-state="active"]{opacity:1;pointer-events:auto;transform:translate3d(0,0,0) rotateY(0) rotateZ(0) scale(1);z-index:3}
+.cert-carousel-stage .ach[data-card-state="next"]{opacity:.72;transform:translate3d(38%,0,-180px) rotateY(-58deg) rotateZ(4deg) scale(.86);z-index:2}
+.cert-carousel-stage .ach[data-card-state="prev"]{opacity:.72;transform:translate3d(-38%,0,-180px) rotateY(58deg) rotateZ(-4deg) scale(.86);z-index:2}
+.cert-carousel-stage .ach[data-card-state="far"]{opacity:0;transform:translate3d(0,0,-260px) scale(.72);z-index:1}
+.cert-carousel-controls{display:flex;align-items:center;justify-content:center;gap:14px}
+.cert-carousel-controls button{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--panel);color:var(--text);font:inherit;cursor:pointer;transition:border-color .25s ease,transform .25s ease}
+.cert-carousel-controls button:hover{border-color:var(--a);transform:translateY(-2px)}
+.cert-carousel-count{min-width:72px;text-align:center;font-size:12px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.cert-carousel-stage .ach{transition:none}}
 .mail{font-size:clamp(22px,3vw,34px);text-decoration:none;border-bottom:2px solid var(--a);padding-bottom:4px}
 .uplink{display:flex;gap:28px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
 .uplink b{display:block;color:var(--text);font-weight:500;margin-top:4px}
@@ -323,8 +335,7 @@ a{color:var(--text)} a:hover,.ra a:hover{color:var(--a)}
 .heat span{border-radius:1px}
 .wgroup{border-top:1px solid var(--line)}
 .wgroup li{font-size:15px}
-.sub>.eyebrow{font-size:11px}
-.sub>.eyebrow.big{font-size:22px;font-weight:600;letter-spacing:.06em;color:var(--text)}
+.sub>.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .ach .thumb img.cert{object-position:left top}
 .bg-area{background:rgba(9,13,26,.45)!important;border-color:var(--line)!important;border-radius:14px!important;backdrop-filter:blur(3px)}
 .bg-side{background:var(--panel)!important;border-color:var(--line)!important;border-radius:14px!important;backdrop-filter:blur(14px)}
@@ -521,8 +532,9 @@ a{color:var(--text)} a:hover,.ra a:hover{color:var(--a)}
 </div>
 </div>
 <div class="sub">
-<h3 class="mono eyebrow big">achievements — checkpoints saved along the way</h3>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:20px">
+<h3 class="mono eyebrow">achievements — checkpoints saved along the way</h3>
+<div class="cert-carousel" data-cert-carousel>
+<div class="cert-carousel-stage" data-cert-stage aria-live="polite">
 <div class="edu ach">
 <button type="button" class="vid" data-yt="QtUKaFm8_gY" data-start="1" aria-label="Play video: School Olympics Champion Boy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"></path></svg></span></button>
 <span class="mono lix">ACHIEVEMENT</span>
@@ -534,12 +546,6 @@ a{color:var(--text)} a:hover,.ra a:hover{color:var(--a)}
 <span class="mono lix">ACHIEVEMENT</span>
 <h3>IITM BS Data Science Foundation</h3>
 <p>Completed the Foundation Program in Mathematics, Statistics, Computational Thinking, and Python.</p>
-</div>
-<div class="edu ach">
-<div class="thumb"><img src="assets/meta-back-end-developer-certificate.png" alt="Meta Back-End Developer Professional Certificate" loading="lazy" onerror="this.remove()"></div>
-<span class="mono lix">CERTIFICATION</span>
-<h3>Meta Back-End Developer</h3>
-<p>Completed the nine-course Meta Back-End Developer Professional Certificate program.</p>
 </div>
 <div class="edu ach">
 <div class="thumb" aria-hidden="true">🧠</div>
@@ -559,8 +565,19 @@ a{color:var(--text)} a:hover,.ra a:hover{color:var(--a)}
 <h3>Social Welfare Achievement</h3>
 <p>Recognized for contribution to social welfare activities.</p>
 </div>
+</div>
+<div class="cert-carousel-controls">
+<button type="button" data-cert-prev aria-label="Previous achievement">←</button>
+<span class="mono cert-carousel-count" data-cert-count aria-live="polite"></span>
+<button type="button" data-cert-next aria-label="Next achievement">→</button>
+</div>
+</div>
+<div class="sub">
+<h3 class="mono eyebrow">certifications — verified learning checkpoints</h3>
+<div class="cert-carousel" data-cert-carousel>
+<div class="cert-carousel-stage" data-cert-stage aria-live="polite">
 <div class="edu ach">
-<a class="thumb" href="https://coursera.org/verify/professional-cert/CZL3O868W2HG" target="_blank" rel="noopener noreferrer"><img class="cert" src="assets/certs/meta-backend.png" alt="Meta Back-End Developer Professional Certificate" loading="lazy" onerror="this.replaceWith('🎓')"></a>
+<a class="thumb" href="https://coursera.org/verify/professional-cert/CZL3O868W2HG" target="_blank" rel="noopener noreferrer"><img class="cert" src="assets/meta-back-end-developer-certificate.png" alt="Meta Back-End Developer Professional Certificate" onerror="this.replaceWith('🎓')"></a>
 <span class="mono lix">CERTIFICATION · META · NOV 2025</span>
 <h3>Meta Back-End Developer</h3>
 <p>9-course professional certificate on Coursera: Python, Django, APIs, databases, version control and a full-stack capstone. <a href="https://coursera.org/verify/professional-cert/CZL3O868W2HG" target="_blank" rel="noopener noreferrer">Verify →</a></p>
@@ -583,6 +600,11 @@ a{color:var(--text)} a:hover,.ra a:hover{color:var(--a)}
 <h3>Agentic AI</h3>
 <p>Design patterns for LLM agents: reflection, tool use, planning and multi-agent workflows. <a href="https://www.deeplearning.ai/certificates/20b73f27-6da1-4ed0-97c8-900196a848d6" target="_blank" rel="noopener noreferrer">Verify →</a></p>
 </div>
+</div>
+<div class="cert-carousel-controls">
+<button type="button" data-cert-prev aria-label="Previous certification">←</button>
+<span class="mono cert-carousel-count" data-cert-count aria-live="polite"></span>
+<button type="button" data-cert-next aria-label="Next certification">→</button>
 </div>
 </div>
   </div>
@@ -750,6 +772,47 @@ window.TRACKERS = {
       var f = el('iframe', { src: ytSrc(b.getAttribute('data-yt'), b.getAttribute('data-start')), title: b.getAttribute('aria-label') || 'YouTube video', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen: '' });
       b.innerHTML = ''; b.classList.remove('has-thumb'); b.appendChild(f); b.style.cursor = 'default';
     });
+  });
+
+  /* ---------- Certification and achievement card swipe ---------- */
+  document.querySelectorAll('[data-cert-carousel]').forEach(function (carousel) {
+    var stage = carousel.querySelector('[data-cert-stage]');
+    var cards = Array.prototype.slice.call(stage.querySelectorAll('.ach'));
+    var count = carousel.querySelector('[data-cert-count]');
+    var index = 0, startX = 0, dragging = false;
+    if (!cards.length) return;
+
+    function render() {
+      cards.forEach(function (card, i) {
+        var distance = (i - index + cards.length) % cards.length;
+        card.setAttribute('data-card-state', distance === 0 ? 'active' : distance === 1 ? 'next' : distance === cards.length - 1 ? 'prev' : 'far');
+        card.setAttribute('aria-hidden', distance === 0 ? 'false' : 'true');
+      });
+      count.textContent = (index + 1) + ' / ' + cards.length;
+    }
+    function move(step) {
+      index = (index + step + cards.length) % cards.length;
+      render();
+    }
+    carousel.querySelector('[data-cert-prev]').addEventListener('click', function () { move(-1); });
+    carousel.querySelector('[data-cert-next]').addEventListener('click', function () { move(1); });
+    stage.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      startX = e.clientX; dragging = true; stage.setPointerCapture(e.pointerId);
+    });
+    stage.addEventListener('pointerup', function (e) {
+      if (!dragging) return;
+      dragging = false;
+      var delta = e.clientX - startX;
+      if (Math.abs(delta) > 48) move(delta < 0 ? 1 : -1);
+    });
+    stage.addEventListener('pointercancel', function () { dragging = false; });
+    stage.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); move(-1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); move(1); }
+    });
+    stage.tabIndex = 0;
+    render();
   });
 
   /* ---------- Reader ---------- */
@@ -1189,7 +1252,7 @@ window.TRACKERS = {
     });
 
     /* panels and cards rise in, like units powering on */
-    var units = $$('.panel, .edu, #projgrid .card, .prof, .bg, .hob, .ach, #contact .links, #contact .tx, #contact .uplink');
+    var units = $$('.panel, .edu, #projgrid .card, .prof, .bg, .hob, .cert-carousel, #contact .links, #contact .tx, #contact .uplink');
     noTrans(units);
     gsap.set(units, { autoAlpha: 0, y: 46 });
     ScrollTrigger.batch(units, { start: 'top 90%', once: true, onEnter: function (b) {
